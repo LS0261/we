@@ -1,4 +1,4 @@
-import Paths from "../../backend/paths.js";
+import Paths from "../../backend/Paths.js";
 
 export default class PauseMenuSubstate {
   constructor(playState) {
@@ -206,7 +206,7 @@ export default class PauseMenuSubstate {
       ({ default: CustomFadeTransition }) => {
         new CustomFadeTransition(this.playState.game, 0.5, () => {
           this.playState.destroy();
-          import("../freeplayState.js").then(({ default: FreeplayState }) => {
+          import("../FreeplayState.js").then(({ default: FreeplayState }) => {
             this.playState.game.changeState(
               new FreeplayState(this.playState.game)
             );

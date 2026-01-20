@@ -1,6 +1,6 @@
 import { BaseStage } from "../../backend/BaseStage.js";
 import BGSpriteJS from "../../object/BGSpriteJS.js"; // Para los sprites estáticos
-import { SpriteAnim } from "../../backend/spriteanim.js"; // Para los sprites animados
+import { SpriteAnim } from "../../backend/SpriteAnim.js"; // Para los sprites animados
 import Paths from "../../backend/Paths.js";
 
 export class TheNothingWorld extends BaseStage {

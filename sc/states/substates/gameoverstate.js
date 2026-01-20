@@ -1,4 +1,4 @@
-import Paths from "../../backend/paths.js";
+import Paths from "../../backend/Paths.js";
 import { Character } from "../../object/character.js";
 import CustomFadeTransition from "../../backend/CustomFadeTransition.js";
 

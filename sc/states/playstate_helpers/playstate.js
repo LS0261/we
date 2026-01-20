@@ -1,5 +1,5 @@
 import { Character } from "../object/character.js";
-import Paths from "../backend/paths.js";
+import Paths from "../backend/Paths.js";
 import Bar from "../object/bar.js";
 import HealthIcon from "../object/healthIcon.js";
 import ClientPrefs from "../backend/clientPrefs.js";

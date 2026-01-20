@@ -3,7 +3,7 @@ import FlxSpriteJS from "../utils/FlxSpriteJS.js";
 import { SpriteAnim } from "../backend/SpriteAnim.js";
 import Paths from "../backend/Paths.js";
 import TitleState from './TitleState.js';
-import FreeplayState from "./freeplaystate.js";
+import FreeplayState from "./FreeplayState.js";
 import CustomFadeTransition from "../backend/CustomFadeTransition.js";
 import OptionsState from "../options/optionsState.js";
 

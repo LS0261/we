@@ -1,5 +1,5 @@
 import FlxSpriteJS from "../../utils/FlxSpriteJS.js";
-import Paths from "../../backend/paths.js";
+import Paths from "../../backend/Paths.js";
 
 export function startCountdown(playState, onComplete) {
   const messages = ["3", "2", "1", "Go!"];
