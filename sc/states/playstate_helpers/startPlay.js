@@ -177,7 +177,7 @@ export async function startPlay(ps, songName) {
   // POSICIONES
   // ---------------------------
   const bfPos = json.boyfriend ?? [850, 350]; //850, 350
-  const dadPos = json.opponent ?? [50, -700]; //100, 50
+  const dadPos = json.opponent ?? [100, 50]; //100, 50
   const gfPos = json.girlfriend ?? [500, 50]; //500, 50
   const hideGF = json.hide_girlfriend ?? false;
   const cameraSpeed = json.camera_speed ?? 1;
