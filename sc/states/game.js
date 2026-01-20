@@ -1,6 +1,6 @@
 // game.js
-import TitleState from './titlestate.js';
-import MainMenuState from './mainmenustate.js';
+import TitleState from './TitleState.js';
+import MainMenuState from './MainMenuState.js';
 
 export const Game = {
   currentState: null,
