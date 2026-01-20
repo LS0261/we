@@ -1,5 +1,5 @@
 import FlxSpriteJS from '../utils/FlxSpriteJS.js';
-import Paths from '../backend/paths.js';
+import Paths from '../backend/Paths.js';
 import ClientPrefs from '../backend/clientPrefs.js';
 
 export default class BGSpriteJS extends FlxSpriteJS {

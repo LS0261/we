@@ -1,4 +1,4 @@
-import Paths from "../../backend/paths.js";
+import Paths from "../../backend/Paths.js";
 import { Character } from "../../object/character.js";
 import { HealthIcon } from "../../object/healthIcon.js";
 import { StageWeek1 } from "../stages/StageWeek1.js";

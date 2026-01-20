@@ -1,6 +1,6 @@
 // sc/object/healthIcon.js
 
-import Paths from '../backend/paths.js';
+import Paths from '../backend/Paths.js';
 
 export class HealthIcon {
   constructor(char = 'face', isPlayer = false) {
