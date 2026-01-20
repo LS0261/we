@@ -1,4 +1,4 @@
-import { SpriteAnim } from "../backend/spriteanim.js";
+import { SpriteAnim } from "../backend/SpriteAnim.js";
 import Paths from "../backend/Paths.js";
 
 export default class TouchControls {

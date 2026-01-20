@@ -1,5 +1,5 @@
 // Bar.js
-import Paths from '../backend/paths.js';
+import Paths from '../backend/Paths.js';
 
 class Bar {
   constructor(x, y, imageName = 'healthBar', valueFunction = null, boundMin = 0, boundMax = 1) {
