@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="flyingDove.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dove flying0000" x="4" y="4" width="335" height="262" frameX="0" frameY="0" frameWidth="338" frameHeight="340"/>
+	<SubTexture name="dove flying0002" x="339" y="4" width="333" height="246" frameX="-2" frameY="-16" frameWidth="338" frameHeight="340"/>
+	<SubTexture name="dove flying0004" x="672" y="4" width="332" height="160" frameX="-3" frameY="-157" frameWidth="338" frameHeight="340"/>
+	<SubTexture name="dove flying0006" x="1004" y="4" width="330" height="184" frameX="-5" frameY="-156" frameWidth="338" frameHeight="340"/>
+	<SubTexture name="dove flying0008" x="1334" y="4" width="332" height="150" frameX="-6" frameY="-132" frameWidth="338" frameHeight="340"/>
+	<SubTexture name="dove flying0010" x="1666" y="4" width="333" height="232" frameX="-2" frameY="-30" frameWidth="338" frameHeight="340"/>
+	<SubTexture name="dove landing0000" x="4" y="266" width="335" height="260" frameX="-3" frameY="-5" frameWidth="338" frameHeight="276"/>
+	<SubTexture name="dove landing0002" x="339" y="266" width="335" height="258" frameX="-2" frameY="-16" frameWidth="338" frameHeight="276"/>
+	<SubTexture name="dove landing0004" x="674" y="266" width="337" height="276" frameX="0" frameY="0" frameWidth="338" frameHeight="276"/>
+	<SubTexture name="dove landing0006" x="674" y="266" width="337" height="276" frameX="0" frameY="0" frameWidth="338" frameHeight="276"/>
+	<SubTexture name="dove landing0008" x="1011" y="266" width="335" height="260" frameX="-2" frameY="-16" frameWidth="338" frameHeight="276"/>
+	<SubTexture name="dove landing0010" x="1346" y="266" width="337" height="275" frameX="0" frameY="0" frameWidth="338" frameHeight="276"/>
+	<SubTexture name="dove landing0012" x="1346" y="266" width="337" height="275" frameX="0" frameY="0" frameWidth="338" frameHeight="276"/>
+	<SubTexture name="dove landing0014" x="1346" y="266" width="337" height="275" frameX="0" frameY="0" frameWidth="338" frameHeight="276"/>
+	<SubTexture name="dove landing loop0000" x="1683" y="266" width="337" height="276"/>
+	<SubTexture name="dove landing loop0002" x="1683" y="266" width="337" height="276"/>
+	<SubTexture name="dove landing loop0004" x="4" y="542" width="335" height="260" frameX="-2" frameY="-16" frameWidth="337" frameHeight="276"/>
+</TextureAtlas>

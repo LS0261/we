@@ -1,0 +1,91 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				143,
+				-38
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "selever left0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-57,
+				-110
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "selever down0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				128,
+				19
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "selever up0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-112,
+				-68
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "selever right0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				39,
+				-15
+			],
+			"loop": true,
+			"anim": "EYP",
+			"fps": 24,
+			"name": "selever lemme eyp",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-50
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "selever idle0",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/pito/selever",
+	"position": [
+		141,
+		150
+	],
+	"healthicon": "selever",
+	"flip_x": false,
+	"healthbar_colors": [
+		148,
+		35,
+		79
+	],
+	"camera_position": [
+		-280,
+		-130
+	],
+	"sing_duration": 6.1,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,116 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ruv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Sorry Sarv."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dsarv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "It's fine. It really is!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ruv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dsarv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I'm quite tired of this cat and mouse chase, y'know?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dsarv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "So I want to let out a little secret of mine. Let's kee-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "can u stop yappin'"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "she talkin the talk fr fr"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dsarv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ruv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dsarv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "May god forgive you..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "um..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "dsarv",
+			"boxState": "normal",
+			"expression": "1",
+			"text": "Because I won't."
+		}
+	]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gospelFire.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="pinkfire instance 10000" x="0" y="0" width="363" height="553" frameX="2" frameY="2" frameWidth="392" frameHeight="557"/>
+	<SubTexture name="pinkfire instance 10001" x="0" y="0" width="363" height="553" frameX="2" frameY="2" frameWidth="392" frameHeight="557"/>
+	<SubTexture name="pinkfire instance 10002" x="0" y="553" width="376" height="499" frameX="-17" frameY="-50" frameWidth="392" frameHeight="557"/>
+	<SubTexture name="pinkfire instance 10003" x="0" y="553" width="376" height="499" frameX="-17" frameY="-50" frameWidth="392" frameHeight="557"/>
+	<SubTexture name="pinkfire instance 10004" x="736" y="0" width="362" height="519" frameX="-3" frameY="-36" frameWidth="392" frameHeight="557"/>
+	<SubTexture name="pinkfire instance 10005" x="736" y="0" width="362" height="519" frameX="-3" frameY="-36" frameWidth="392" frameHeight="557"/>
+	<SubTexture name="pinkfire instance 10006" x="363" y="0" width="373" height="520" frameX="-7" frameY="-37" frameWidth="392" frameHeight="557"/>
+	<SubTexture name="pinkfire instance 10007" x="363" y="0" width="373" height="520" frameX="-7" frameY="-37" frameWidth="392" frameHeight="557"/>
+</TextureAtlas>

@@ -1,0 +1,53 @@
+{
+	"animations": [
+		{
+			"offsets": [110,-63],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "sarvente left",
+			"indices": []
+		},
+		{
+			"offsets": [23,-100],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "sarvente down",
+			"indices": []
+		},
+				{
+			"offsets": [128,139],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "sarvente up",
+			"indices": []
+		},
+				{
+			"offsets": [-7,-43],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "sarvente right",
+			"indices": []
+		},
+				{
+			"offsets": [0,-50],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "sarvente idle0",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/demonsarvente",
+	"position": [250,0],
+	"healthicon": "sarvente-demon",
+	"flip_x": false,
+	"healthbar_colors": [255,42,109],
+	"camera_position": [0,0],
+	"sing_duration": 6.1,
+	"scale": 2
+}

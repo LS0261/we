@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				164,
+				9
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "ruv left0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				-71
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "ruv down0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				11,
+				44
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "ruv up0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-63,
+				-21
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "ruv right0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "ruv idle0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/ruv_indoors",
+	"position": [
+		200,
+		190
+	],
+	"healthicon": "ruv",
+	"flip_x": false,
+	"healthbar_colors": [
+		118,
+		100,
+		134
+	],
+	"camera_position": [
+		-100,
+		-150
+	],
+	"sing_duration": 6.1,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

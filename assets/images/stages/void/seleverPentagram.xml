@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="seleverPentagram.png">
+	
+	
+	<SubTexture name="demon pentagram0000" x="3.0" y="3.0" width="280.5" height="281.0" />
+	<SubTexture name="demon pentagram0001" x="3.0" y="3.0" width="280.5" height="281.0" />
+	<SubTexture name="demon pentagram0002" x="283.5" y="3.0" width="280.0" height="278.0" frameX="-0.5" frameY="0.0" frameWidth="280.5" frameHeight="281.0" />
+	<SubTexture name="demon pentagram0003" x="283.5" y="3.0" width="280.0" height="278.0" frameX="-0.5" frameY="0.0" frameWidth="280.5" frameHeight="281.0" />
+</TextureAtlas>

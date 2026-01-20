@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="leftPath.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="path left instance 10000" x="0" y="0" width="1160" height="594" frameX="2" frameY="2" frameWidth="1156" frameHeight="590"/>
+	<SubTexture name="path left instance 10001" x="0" y="0" width="1160" height="594" frameX="2" frameY="2" frameWidth="1156" frameHeight="590"/>
+	<SubTexture name="path left instance 10002" x="1160" y="0" width="1160" height="585" frameX="2" frameY="-7" frameWidth="1156" frameHeight="590"/>
+	<SubTexture name="path left instance 10003" x="0" y="594" width="1160" height="584" frameX="2" frameY="-8" frameWidth="1156" frameHeight="590"/>
+	<SubTexture name="path left instance 10004" x="0" y="594" width="1160" height="584" frameX="2" frameY="-8" frameWidth="1156" frameHeight="590"/>
+</TextureAtlas>

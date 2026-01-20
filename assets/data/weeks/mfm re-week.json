@@ -1,0 +1,17 @@
+{
+	"songs": [
+		["Parish", "sarvente", [255,172,209]],
+		["Worship", "sarventeangry", [255,172,209]],
+		["Zavodila", "ruv", [118,100,134]],
+		["Gospel", "sarvente-demon", [255,42,109]]
+	],
+	"weekCharacters": ["sarv","mfmbf","mfmgf"],
+	"weekBackground": "mfm",
+	"storyName": "MID FIGHT MASSES",
+	"weekBefore": "tutorial",
+	"weekName": "MID FIGHT MASSES",
+	"startUnlocked": true,
+	"difficulties": "Hard",
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="flamingLeft.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="fire animation wit fade instance 10000" x="1664" y="681" width="690" height="671" frameX="-18" frameY="-70" frameWidth="910" frameHeight="789"/>
+	<SubTexture name="fire animation wit fade instance 10001" x="1664" y="0" width="726" height="681" frameX="2" frameY="-54" frameWidth="910" frameHeight="789"/>
+	<SubTexture name="fire animation wit fade instance 10002" x="842" y="0" width="822" height="733" frameX="-11" frameY="0" frameWidth="910" frameHeight="789"/>
+	<SubTexture name="fire animation wit fade instance 10003" x="0" y="0" width="842" height="738" frameX="-30" frameY="2" frameWidth="910" frameHeight="789"/>
+	<SubTexture name="fire animation wit fade instance 10004" x="0" y="738" width="862" height="672" frameX="-50" frameY="-67" frameWidth="910" frameHeight="789"/>
+</TextureAtlas>

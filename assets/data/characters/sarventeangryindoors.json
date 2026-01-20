@@ -1,0 +1,133 @@
+{
+    "animations": [
+        {
+            "offsets": [
+                -47,
+                -164
+            ],
+            "loop": false,
+            "anim": "singLEFT",
+            "fps": 24,
+            "name": "sarvente left angry0",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -162,
+                -242
+            ],
+            "loop": false,
+            "anim": "singDOWN",
+            "fps": 24,
+            "name": "sarvente down angry0",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -99,
+                -123
+            ],
+            "loop": false,
+            "anim": "singUP",
+            "fps": 24,
+            "name": "sarvente up angry0",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -297,
+                -183
+            ],
+            "loop": false,
+            "anim": "singRIGHT",
+            "fps": 24,
+            "name": "sarvente right angry0",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -142,
+                -190
+            ],
+            "loop": false,
+            "anim": "singLEFT-alt",
+            "fps": 24,
+            "name": "sarvente left angry alt0",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -187,
+                -262
+            ],
+            "loop": false,
+            "anim": "singDOWN-alt",
+            "fps": 24,
+            "name": "sarvente down angry alt0",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -99,
+                -123
+            ],
+            "loop": false,
+            "anim": "singUP-alt",
+            "fps": 24,
+            "name": "sarvente up angry alt0",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -296,
+                -207
+            ],
+            "loop": false,
+            "anim": "singRIGHT-alt",
+            "fps": 24,
+            "name": "sarvente right angry alt0",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -246,
+                -271
+            ],
+            "loop": true,
+            "anim": "tired",
+            "fps": 24,
+            "name": "sarvente tired",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -137,
+                -207
+            ],
+            "loop": false,
+            "anim": "idle",
+            "fps": 24,
+            "name": "sarvente idle angry0",
+            "indices": []
+        }
+    ],
+    "no_antialiasing": false,
+    "image": "characters/sarvente_angry_indoors",
+    "position": [
+        0,
+        0
+    ],
+    "healthicon": "sarventeangry",
+    "flip_x": false,
+    "healthbar_colors": [
+        255,
+        172,
+        209
+    ],
+    "camera_position": [
+        0,
+        0
+    ],
+    "sing_duration": 6.1,
+    "scale": 2.0
+}

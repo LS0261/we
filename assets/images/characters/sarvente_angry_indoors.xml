@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sarvente_angry_indoors.png">
+  <SubTexture name="sarvente down angry alt0000" x="2293" y="1019" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0001" x="2293" y="1019" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0002" x="1928" y="0" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0003" x="2119" y="336" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0004" x="2119" y="336" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0005" x="2119" y="336" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0006" x="2160" y="0" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0007" x="2160" y="0" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0008" x="2160" y="0" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0009" x="2328" y="1355" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0010" x="2328" y="1355" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0011" x="2328" y="1355" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0012" x="1928" y="0" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry alt0013" x="1928" y="0" width="232" height="336" frameX="0" frameY="0" frameWidth="232" frameHeight="336"/>
+  <SubTexture name="sarvente down angry0000" x="544" y="0" width="254" height="348" frameX="0" frameY="-5" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0001" x="544" y="0" width="254" height="348" frameX="0" frameY="-5" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0002" x="513" y="1448" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0003" x="527" y="1086" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0004" x="527" y="1086" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0005" x="527" y="1086" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0006" x="534" y="724" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0007" x="534" y="724" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0008" x="534" y="724" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0009" x="539" y="362" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0010" x="539" y="362" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0011" x="539" y="362" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0012" x="513" y="1448" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente down angry0013" x="513" y="1448" width="254" height="351" frameX="0" frameY="-2" frameWidth="256" frameHeight="353"/>
+  <SubTexture name="sarvente idle angry0000" x="274" y="1819" width="243" height="370" frameX="0" frameY="-1" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0001" x="274" y="1819" width="243" height="370" frameX="0" frameY="-1" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0002" x="270" y="1448" width="243" height="371" frameX="0" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0003" x="981" y="1446" width="235" height="371" frameX="-8" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0004" x="1445" y="2188" width="233" height="371" frameX="-8" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0005" x="1445" y="2188" width="233" height="371" frameX="-8" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0006" x="781" y="1075" width="237" height="371" frameX="-3" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0007" x="781" y="1075" width="237" height="371" frameX="-3" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0008" x="1211" y="2188" width="234" height="371" frameX="-6" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0009" x="1211" y="397" width="226" height="371" frameX="-14" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0010" x="1220" y="0" width="226" height="371" frameX="-14" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0011" x="1220" y="0" width="226" height="371" frameX="-14" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0012" x="509" y="2189" width="238" height="371" frameX="0" frameY="0" frameWidth="238" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0013" x="509" y="2189" width="238" height="371" frameX="0" frameY="0" frameWidth="238" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0014" x="509" y="2189" width="238" height="371" frameX="0" frameY="0" frameWidth="238" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0015" x="1018" y="811" width="229" height="371" frameX="-11" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0016" x="1018" y="811" width="229" height="371" frameX="-11" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0017" x="1018" y="811" width="229" height="371" frameX="-11" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0018" x="1211" y="1817" width="235" height="371" frameX="-6" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0019" x="1211" y="1817" width="235" height="371" frameX="-6" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente idle angry0020" x="1211" y="1817" width="235" height="371" frameX="-6" frameY="0" frameWidth="243" frameHeight="371"/>
+  <SubTexture name="sarvente left angry alt0000" x="1665" y="681" width="220" height="366" frameX="0" frameY="-2" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0001" x="1665" y="681" width="220" height="366" frameX="0" frameY="-2" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0002" x="1644" y="1562" width="220" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0003" x="1910" y="2089" width="209" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0004" x="1910" y="2089" width="209" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0005" x="1910" y="2089" width="209" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0006" x="1910" y="1724" width="216" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0007" x="1910" y="1724" width="216" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0008" x="1910" y="1724" width="216" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0009" x="2350" y="2031" width="206" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0010" x="2350" y="2031" width="206" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0011" x="2350" y="2031" width="206" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0012" x="1644" y="1562" width="220" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry alt0013" x="1644" y="1562" width="220" height="365" frameX="0" frameY="-3" frameWidth="220" frameHeight="368"/>
+  <SubTexture name="sarvente left angry0000" x="0" y="1905" width="274" height="363" frameX="0" frameY="-17" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0001" x="0" y="1905" width="274" height="363" frameX="0" frameY="-17" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0002" x="270" y="0" width="274" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0003" x="270" y="724" width="264" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0004" x="270" y="724" width="264" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0005" x="270" y="724" width="264" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0006" x="270" y="362" width="269" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0007" x="270" y="362" width="269" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0008" x="270" y="362" width="269" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0009" x="270" y="1086" width="257" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0010" x="270" y="1086" width="257" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0011" x="270" y="1086" width="257" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0012" x="270" y="0" width="274" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente left angry0013" x="270" y="0" width="274" height="362" frameX="0" frameY="-18" frameWidth="274" frameHeight="380"/>
+  <SubTexture name="sarvente right angry alt0000" x="0" y="0" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0001" x="0" y="0" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0002" x="0" y="381" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0003" x="0" y="762" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0004" x="0" y="762" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0005" x="0" y="762" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0006" x="0" y="1143" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0007" x="0" y="1143" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0008" x="0" y="1143" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0009" x="0" y="1524" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0010" x="0" y="1524" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0011" x="0" y="1524" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0012" x="0" y="381" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry alt0013" x="0" y="381" width="270" height="381" frameX="0" frameY="0" frameWidth="270" frameHeight="381"/>
+  <SubTexture name="sarvente right angry0000" x="274" y="2189" width="235" height="381" frameX="0" frameY="0" frameWidth="246" frameHeight="381"/>
+  <SubTexture name="sarvente right angry0001" x="274" y="2189" width="235" height="381" frameX="0" frameY="0" frameWidth="246" frameHeight="381"/>
+  <SubTexture name="sarvente right angry0002" x="517" y="1799" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0003" x="747" y="2179" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0004" x="747" y="2179" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0005" x="747" y="2179" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0006" x="749" y="1799" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0007" x="749" y="1799" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0008" x="749" y="1799" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0009" x="979" y="2179" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0010" x="979" y="2179" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0011" x="979" y="2179" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0012" x="517" y="1799" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente right angry0013" x="517" y="1799" width="232" height="380" frameX="0" frameY="0" frameWidth="246" frameHeight="380"/>
+  <SubTexture name="sarvente tired0000" x="1825" y="1047" width="237" height="336" frameX="-4" frameY="-5" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0001" x="1825" y="1047" width="237" height="336" frameX="-4" frameY="-5" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0002" x="1687" y="0" width="241" height="337" frameX="0" frameY="-4" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0003" x="2096" y="1363" width="232" height="337" frameX="-9" frameY="-4" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0004" x="981" y="1817" width="228" height="340" frameX="-13" frameY="-1" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0005" x="2328" y="1691" width="228" height="340" frameX="-13" frameY="-1" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0006" x="2062" y="1022" width="231" height="341" frameX="-8" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0007" x="2062" y="1022" width="231" height="341" frameX="-8" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0008" x="1885" y="681" width="233" height="341" frameX="-5" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0009" x="2349" y="672" width="224" height="341" frameX="-14" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0010" x="2126" y="2031" width="224" height="341" frameX="-13" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0011" x="2126" y="2031" width="224" height="341" frameX="-13" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0012" x="1645" y="341" width="241" height="340" frameX="0" frameY="0" frameWidth="241" frameHeight="340"/>
+  <SubTexture name="sarvente tired0013" x="1645" y="341" width="241" height="340" frameX="0" frameY="0" frameWidth="241" frameHeight="340"/>
+  <SubTexture name="sarvente tired0014" x="1446" y="0" width="241" height="341" frameX="0" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0015" x="1678" y="1927" width="232" height="341" frameX="-9" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0016" x="1864" y="1383" width="232" height="341" frameX="-9" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0017" x="2118" y="678" width="231" height="341" frameX="-9" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0018" x="1886" y="337" width="233" height="341" frameX="-8" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente tired0019" x="1886" y="337" width="233" height="341" frameX="-8" frameY="0" frameWidth="241" frameHeight="341"/>
+  <SubTexture name="sarvente up angry alt0000" x="1004" y="397" width="207" height="414" frameX="-43" frameY="0" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0001" x="1004" y="397" width="207" height="414" frameX="-43" frameY="0" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0002" x="793" y="348" width="211" height="413" frameX="-39" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0003" x="1419" y="1165" width="202" height="413" frameX="-48" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0004" x="1419" y="1165" width="202" height="413" frameX="-48" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0005" x="1419" y="1165" width="202" height="413" frameX="-48" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0006" x="1216" y="1182" width="203" height="413" frameX="-47" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0007" x="1216" y="1182" width="203" height="413" frameX="-47" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0008" x="1216" y="1182" width="203" height="413" frameX="-47" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0009" x="1446" y="1578" width="198" height="413" frameX="-52" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0010" x="1446" y="1578" width="198" height="413" frameX="-52" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0011" x="1446" y="1578" width="198" height="413" frameX="-52" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0012" x="793" y="348" width="211" height="413" frameX="-39" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry alt0013" x="793" y="348" width="211" height="413" frameX="-39" frameY="-1" frameWidth="250" frameHeight="414"/>
+  <SubTexture name="sarvente up angry0000" x="1247" y="768" width="211" height="397" frameX="-43" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0001" x="1247" y="768" width="211" height="397" frameX="-43" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0002" x="1004" y="0" width="216" height="397" frameX="-38" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0003" x="1458" y="768" width="207" height="397" frameX="-47" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0004" x="1458" y="768" width="207" height="397" frameX="-47" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0005" x="1458" y="768" width="207" height="397" frameX="-47" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0006" x="1437" y="371" width="208" height="397" frameX="-46" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0007" x="1437" y="371" width="208" height="397" frameX="-46" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0008" x="1437" y="371" width="208" height="397" frameX="-46" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0009" x="1621" y="1165" width="204" height="397" frameX="-50" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0010" x="1621" y="1165" width="204" height="397" frameX="-50" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0011" x="1621" y="1165" width="204" height="397" frameX="-50" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0012" x="1004" y="0" width="216" height="397" frameX="-38" frameY="0" frameWidth="254" frameHeight="397"/>
+  <SubTexture name="sarvente up angry0013" x="1004" y="0" width="216" height="397" frameX="-38" frameY="0" frameWidth="254" frameHeight="397"/>
+</TextureAtlas>

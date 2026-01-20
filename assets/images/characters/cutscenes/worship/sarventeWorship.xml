@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="sarventeWorship.png" width="1693" height="1589">
+	<SubTexture name="sarvente calling0000" x="455" y="654" width="456" height="223" frameX="-0" frameY="-12" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0001" x="457" y="216" width="466" height="214" frameX="-0" frameY="-21" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0002" x="1" y="1106" width="461" height="230" frameX="-0" frameY="-6" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0003" x="926" y="216" width="454" height="216" frameX="-0" frameY="-20" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0004" x="457" y="433" width="454" height="218" frameX="-0" frameY="-14" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0005" x="920" y="1" width="461" height="212" frameX="-0" frameY="-20" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0006" x="914" y="435" width="456" height="219" frameX="-0" frameY="-6" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0007" x="1" y="1" width="450" height="208" frameX="-0" frameY="-17" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0008" x="1" y="651" width="451" height="221" frameX="-0" frameY="-11" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0009" x="454" y="1" width="463" height="210" frameX="-0" frameY="-22" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0010" x="914" y="657" width="458" height="224" frameX="-0" frameY="-8" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0011" x="1" y="214" width="453" height="213" frameX="-0" frameY="-19" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente calling0012" x="1" y="430" width="453" height="218" frameX="-0" frameY="-14" frameWidth="468" frameHeight="236"/>
+	<SubTexture name="sarvente falling0000" x="1375" y="671" width="286" height="335" frameX="-0" frameY="-0" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0001" x="1383" y="334" width="275" height="334" frameX="-0" frameY="-0" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0002" x="1384" y="1" width="308" height="330" frameX="-1" frameY="-4" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0006" x="465" y="1112" width="463" height="233" frameX="-2" frameY="-129" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0007" x="1" y="880" width="473" height="223" frameX="-2" frameY="-139" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0008" x="1" y="1348" width="465" height="240" frameX="-2" frameY="-121" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0009" x="952" y="1009" width="458" height="228" frameX="-2" frameY="-133" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0010" x="1413" y="1009" width="234" height="461" rotated="true" frameX="-2" frameY="-127" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0011" x="477" y="884" width="472" height="225" frameX="-2" frameY="-136" frameWidth="477" frameHeight="441"/>
+	<SubTexture name="sarvente falling0012" x="931" y="1240" width="465" height="239" frameX="-2" frameY="-122" frameWidth="477" frameHeight="441"/>
+</TextureAtlas>

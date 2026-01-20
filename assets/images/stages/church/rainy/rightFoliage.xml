@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="rightFoliage.png">
+	
+	
+	<SubTexture name="large foliage rainy instance 10000" x="5.5" y="5.5" width="1219.5" height="730.5" frameX="0.0" frameY="0.0" frameWidth="1221.5" frameHeight="730.5" />
+	<SubTexture name="large foliage rainy instance 10001" x="5.5" y="5.5" width="1219.5" height="730.5" frameX="0.0" frameY="0.0" frameWidth="1221.5" frameHeight="730.5" />
+	<SubTexture name="large foliage rainy instance 10002" x="5.5" y="736.0" width="1219.5" height="723.0" frameX="-2.0" frameY="-3.5" frameWidth="1221.5" frameHeight="730.5" />
+	<SubTexture name="large foliage rainy instance 10003" x="5.5" y="736.0" width="1219.5" height="723.0" frameX="-2.0" frameY="-3.5" frameWidth="1221.5" frameHeight="730.5" />
+</TextureAtlas>

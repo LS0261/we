@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="evilBush.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="bush red0000" x="0" y="0" width="794" height="674" frameX="2" frameY="2" frameWidth="790" frameHeight="670"/>
+	<SubTexture name="bush red0001" x="794" y="0" width="794" height="674" frameX="2" frameY="2" frameWidth="790" frameHeight="670"/>
+</TextureAtlas>

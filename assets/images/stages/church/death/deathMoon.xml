@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="deathMoon.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="death moon instance 10000" x="0" y="0" width="466" height="466" frameX="2" frameY="2" frameWidth="462" frameHeight="462"/>
+</TextureAtlas>

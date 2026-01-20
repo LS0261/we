@@ -1,0 +1,76 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ruv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You've pushed quite a lot of buttons while I was away, huh?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "Yup."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "yeah"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ruv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Well you really should have just ran away or joined the church while you could."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "nah."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "Nah."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ruv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "But you decided to pull a stru-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "1",
+			"text": "*burps*"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "1",
+			"text": "Lets waste em'"
+		}
+	]
+}

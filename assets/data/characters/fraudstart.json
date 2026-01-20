@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-165,
+				-49
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "fraud idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-157,
+				-40
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "fraud left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-163,
+				-56
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "fraud down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-170,
+				-33
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "fraud up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-170,
+				-57
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "fraud right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-135,
+				-56
+			],
+			"anim": "Wave",
+			"fps": 24,
+			"name": "fraud wave",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/fraudstart",
+	"position": [
+		-30,
+		210
+	],
+	"healthicon": "fraud-icons",
+	"flip_x": false,
+	"healthbar_colors": [
+		46,
+		70,
+		107
+	],
+	"camera_position": [
+		-120,
+		60
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

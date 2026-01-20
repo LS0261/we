@@ -1,0 +1,78 @@
+{
+    "animations": [
+        {
+            "offsets": [
+                -73,
+                -178
+            ],
+            "loop": false,
+            "anim": "singLEFT",
+            "fps": 24,
+            "name": "sarvente left",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -132,
+                -252
+            ],
+            "loop": false,
+            "anim": "singDOWN",
+            "fps": 24,
+            "name": "sarvente down",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -118,
+                -160
+            ],
+            "loop": false,
+            "anim": "singUP",
+            "fps": 24,
+            "name": "sarvente up",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -283,
+                -204
+            ],
+            "loop": false,
+            "anim": "singRIGHT",
+            "fps": 24,
+            "name": "sarvente right",
+            "indices": []
+        },
+        {
+            "offsets": [
+                -129,
+                -199
+            ],
+            "loop": false,
+            "anim": "idle",
+            "fps": 24,
+            "name": "sarvente idle0",
+            "indices": []
+        }
+    ],
+    "no_antialiasing": false,
+    "image": "characters/sarvente",
+    "position": [
+        0,
+        0
+    ],
+    "healthicon": "sarvente",
+    "flip_x": false,
+    "healthbar_colors": [
+        255,
+        172,
+        209
+    ],
+    "camera_position": [
+        0,
+        0
+    ],
+    "sing_duration": 6.1,
+    "scale": 2.0
+}

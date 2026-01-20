@@ -1,0 +1,47 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				1,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Abot System"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle2",
+			"loop": false,
+			"name": "Abot System"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/abot/abotSystem",
+	"position": [
+		105,
+		390
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		-180,
+		-130
+	],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

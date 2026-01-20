@@ -1,0 +1,236 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "angry",
+			"expression": "2",
+			"text": "HAPPY APRIL FOOLS BI-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "Wait, it's not even April..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Whatever."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "It feels like I should say something before ya start whining over the smallest shit..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "angry",
+			"expression": "3",
+			"text": "LMAOOO Yes. I see YOU"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "But yeah, I like talking a lot and I don't care if it annoys you."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "So, Lets have some fun!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "what the fuck?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "Huh.."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "How long has it been... like 4 years?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "2",
+			"text": "...and I'm STILL tampering with my own parallel world..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "angry",
+			"expression": "2",
+			"text": "LMAOOO! Look dude, I don't know how the FUCK you got here..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "But the Demon and the Criminal you're searching for are probably-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "um... i don't care."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "real."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "... wow."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Anyways, I'm kind of pissed you entered my parallel world I made temporarily so my sist-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "erm..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "okay, okay"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "...My power can't keep this place together...."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sel",
+			"boxState": "angry",
+			"expression": "2",
+			"text": "I'll end you along with this place!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "shut the FUCK up bro"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "im sayin' like"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "chattin"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "1",
+			"text": "Put a BULLET in him."
+		}
+	]
+}

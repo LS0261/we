@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../../assets/images/menuDesat.png');
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+    #mainMenu {
+      background: #222;
+      color: #eee;
+      padding: 4px;
+      font-family: sans-serif;
+      display: flex;
+      gap: 12px;
+      border-bottom: 1px solid #444;
+    }
+
+    .menuItem {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #333;
+      border: 1px solid #555;
+      min-width: 120px;
+      z-index: 100;
+    }
+
+    .menuItem:hover .submenu {
+      display: block;
+    }
+
+    .menuBtn {
+      width: 100%;
+      background: none;
+      border: none;
+      color: #eee;
+      padding: 6px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .menuBtn:hover {
+      background: #444;
+    }
+
+    /* PANEL OPCIONES */
+    #optionsPanel {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 300px;
+      height: 500px;
+      background: #222;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+      z-index: 200;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    #optionsHeader {
+      background: #222;
+      padding: 8px;
+      cursor: move;
+      border-radius: 6px 6px 0 0;
+    }
+
+    #tabBar {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4px;
+      background: #111;
+      border-bottom: 1px solid #333;
+      gap: 4px;
+    }
+
+    .tab {
+      flex: 1 1 calc(33.33% - 4px);
+      padding: 6px 4px;
+      background: #222;
+      border: none;
+      color: #eee;
+      cursor: pointer;
+      font-size: 11px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .tab:hover {
+      background: #333;
+    }
+
+    .tab.active {
+      background: #444;
+      font-weight: bold;
+    }
+
+    .tabContent {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 8px;
+      display: none;
+      font-size: 12px;
+    }
+
+    .tabContent.active {
+      display: block;
+    }
+
+    button, input, select {
+      margin: 4px 0;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 11px;
+    }
+
+    .numControl {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .numControl input[type="number"] {
+      flex-grow: 1;
+    }
+
+    label {
+      display: block;
+      margin-top: 4px;
+    }
+.psychUIBox {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 330px;
+  background: rgba(0,0,0,0); /* fondo transparente */
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  z-index: 200;
+  border: none;
+}
+
+.tabBar {
+  display: flex;
+  position: relative;
+  background: #222;
+  border-bottom: 1px solid #444;
+}
+
+.tab {
+  flex: 1;
+  padding: 6px 0;
+  background: none;
+  border: none;
+  color: #eee;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+#tabIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #eee;
+  transition: left 0.2s, width 0.2s;
+}
+
+.tabContent {
+  display: none;
+  background: #222;
+  padding: 6px;
+}
+
+.tabContent.active {
+  display: block;
+}
+
+.menuBtn {
+  width: 100%;
+  padding: 6px;
+  background: none;
+  border: none;
+  color: #eee;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menuBtn:hover {
+  background: #444;
+}
+
+#chart {
+  position: absolute;
+  top: 30px;        /* deja espacio para el menú superior */
+  right: 0;         /* alinea a la derecha */
+  bottom: 0;        /* estira hasta abajo */
+  left: 500px;      /* aquí fijas el borde izquierdo para que quede justo al lado del panel */
+  background: #00000000;
+  border: 9px solid #555;
+  margin: 0;
+  box-sizing: border-box; /* para que el borde no aumente tamaño */
+}
+html, body {
+  overflow: hidden;     /* Oculta scroll vertical y horizontal */
+  touch-action: none;   /* Evita gestos táctiles como scroll y zoom */
+}
+#snapDisplay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("./fonts/vcr.ttf") format("truetype");
+}

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fraud.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="400" height="403" frameX="0" frameY="-3" frameWidth="400" frameHeight="406"/>
+	<SubTexture name="down0001" x="0" y="0" width="400" height="403" frameX="0" frameY="-3" frameWidth="400" frameHeight="406"/>
+	<SubTexture name="down0002" x="400" y="0" width="396" height="406" frameX="-2" frameY="0" frameWidth="400" frameHeight="406"/>
+	<SubTexture name="down0003" x="400" y="0" width="396" height="406" frameX="-2" frameY="0" frameWidth="400" frameHeight="406"/>
+	<SubTexture name="idle0000" x="796" y="0" width="389" height="410"/>
+	<SubTexture name="left0000" x="1185" y="0" width="389" height="410" frameX="0" frameY="0" frameWidth="391" frameHeight="410"/>
+	<SubTexture name="left0001" x="1185" y="0" width="389" height="410" frameX="0" frameY="0" frameWidth="391" frameHeight="410"/>
+	<SubTexture name="left0002" x="1574" y="0" width="388" height="410" frameX="-3" frameY="0" frameWidth="391" frameHeight="410"/>
+	<SubTexture name="left0003" x="1574" y="0" width="388" height="410" frameX="-3" frameY="0" frameWidth="391" frameHeight="410"/>
+	<SubTexture name="right0000" x="0" y="410" width="385" height="410" frameX="-2" frameY="0" frameWidth="387" frameHeight="410"/>
+	<SubTexture name="right0001" x="0" y="410" width="385" height="410" frameX="-2" frameY="0" frameWidth="387" frameHeight="410"/>
+	<SubTexture name="right0002" x="385" y="410" width="386" height="410" frameX="0" frameY="0" frameWidth="387" frameHeight="410"/>
+	<SubTexture name="right0003" x="385" y="410" width="386" height="410" frameX="0" frameY="0" frameWidth="387" frameHeight="410"/>
+	<SubTexture name="up0000" x="771" y="410" width="383" height="416" frameX="-1" frameY="0" frameWidth="386" frameHeight="416"/>
+	<SubTexture name="up0001" x="771" y="410" width="383" height="416" frameX="-1" frameY="0" frameWidth="386" frameHeight="416"/>
+	<SubTexture name="up0002" x="1154" y="410" width="386" height="414" frameX="0" frameY="-2" frameWidth="386" frameHeight="416"/>
+	<SubTexture name="up0003" x="1154" y="410" width="386" height="414" frameX="0" frameY="-2" frameWidth="386" frameHeight="416"/>
+</TextureAtlas>

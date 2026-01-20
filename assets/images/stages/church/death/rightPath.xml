@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rightPath.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="foliage fire instance 10000" x="0" y="0" width="1521" height="653" frameX="2" frameY="2" frameWidth="1517" frameHeight="649"/>
+	<SubTexture name="foliage fire instance 10001" x="0" y="0" width="1521" height="653" frameX="2" frameY="2" frameWidth="1517" frameHeight="649"/>
+	<SubTexture name="foliage fire instance 10002" x="0" y="653" width="1520" height="647" frameX="2" frameY="-4" frameWidth="1517" frameHeight="649"/>
+	<SubTexture name="foliage fire instance 10003" x="1521" y="0" width="1521" height="645" frameX="2" frameY="-6" frameWidth="1517" frameHeight="649"/>
+	<SubTexture name="foliage fire instance 10004" x="1521" y="0" width="1521" height="645" frameX="2" frameY="-6" frameWidth="1517" frameHeight="649"/>
+</TextureAtlas>

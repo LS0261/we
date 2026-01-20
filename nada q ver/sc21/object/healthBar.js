@@ -1,0 +1,56 @@
+// sc/object/healthBar.js
+import FlxSpriteJS from "../utils/FlxSpriteJS.js";
+import Paths from "../backend/Paths.js";
+
+export default class HealthBar {
+  constructor(x, y, width, height, getHealthFn, maxHealth) {
+    this.x = x;
+    this.y = y;
+    this.barWidth = width;
+    this.barHeight = height;
+    this.getHealth = getHealthFn;
+    this.maxHealth = maxHealth || 100;
+    this.bgColor = "#f00";
+    this.fgColor = "#0f0";
+            this.ngSpr = new FlxSpriteJS(0, 0.52);
+    this.ngSpr.visible = false;
+    this.ngSpr.loadGraphic(Paths.image('newgrounds_logo')).then(() => {
+      this.ngSpr.setGraphicSize(Math.floor(this.ngSpr.width * 0.8));
+      this.ngSpr.updateHitbox();
+      this.ngSpr.screenCenter("X");
+    });
+  }
+
+  setColors(bg, fg) {
+    this.bgColor = bg;
+    this.fgColor = fg;
+  }
+
+  update() {
+    // Opcional: lógica de suavizado si quieres
+    // Ejemplo:
+    if (!this.prevHealth) this.prevHealth = this.getHealth();
+    const target = this.getHealth();
+    const delta = (target - this.prevHealth) * 0.1;
+    this.prevHealth += delta;
+  }
+
+drawTo(ctx) {
+    const healthPercent = Math.max(0, Math.min(1, this.getHealth() / this.maxHealth));
+
+    // Fondo rojo
+    ctx.fillStyle = this.bgColor;
+    ctx.fillRect(this.x, this.y, this.barWidth, this.barHeight);
+
+    // Verde crece hacia la izquierda
+    ctx.fillStyle = this.fgColor;
+    const fgWidth = this.barWidth * healthPercent;
+    ctx.fillRect(this.x + this.barWidth - fgWidth, this.y, fgWidth, this.barHeight);
+
+    // Borde opcional
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 2;
+    ctx.strokeRect(this.x, this.y, this.barWidth, this.barHeight);
+}
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rightFoliage.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="large foliage instance 10000" x="0" y="0" width="978" height="586" frameX="2" frameY="2" frameWidth="975" frameHeight="582"/>
+	<SubTexture name="large foliage instance 10001" x="978" y="0" width="978" height="581" frameX="1" frameY="0" frameWidth="975" frameHeight="582"/>
+</TextureAtlas>

@@ -1,0 +1,52 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sarv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Greetings! Sorry for the inconvenience, are you-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sarv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Wait..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sarv",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Is that a"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sarv",
+			"boxState": "angry",
+			"expression": "corcern",
+			"text": "GUN?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "pico",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "yeah"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nene",
+			"boxState": "normal",
+			"expression": "0",
+			"text": "yeah"
+		}
+	]
+}

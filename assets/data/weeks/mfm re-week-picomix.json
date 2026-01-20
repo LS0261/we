@@ -1,0 +1,18 @@
+{
+	"songs": [
+		["Parish-(Pico-Mix)", "sarvente", [255,172,209]],
+		["Worship-(Pico-Mix)", "sarventeangry", [255,172,209]],
+		["Zavodila-(Pico-Mix)", "ruv", [118,100,134]],
+		["Gospel-(Pico-Mix)", "sarvente-demon", [255,42,109]],
+		["Casanova-(Pico-Mix)", "selever", [148,35,79]]
+	],
+	"weekCharacters": ["dad","bf","gf"],
+	"weekBackground": "stage",
+	"storyName": "Daddy Dearest",
+	"weekBefore": "tutorial",
+	"weekName": "Week 1",
+	"startUnlocked": true,
+	"difficulties": "Hard",
+	"hideStoryMode": true,
+	"hideFreeplay": false
+}

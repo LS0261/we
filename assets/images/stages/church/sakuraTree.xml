@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sakuraTree.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="sakuraTree instance 10000" x="0" y="0" width="650" height="842" frameX="2" frameY="2" frameWidth="646" frameHeight="838"/>
+	<SubTexture name="sakuraTree instance 10001" x="0" y="0" width="650" height="842" frameX="2" frameY="2" frameWidth="646" frameHeight="838"/>
+	<SubTexture name="sakuraTree instance 10002" x="1293" y="0" width="646" height="833" frameX="2" frameY="-7" frameWidth="646" frameHeight="838"/>
+	<SubTexture name="sakuraTree instance 10003" x="0" y="842" width="646" height="833" frameX="2" frameY="-7" frameWidth="646" frameHeight="838"/>
+	<SubTexture name="sakuraTree instance 10004" x="650" y="0" width="643" height="840" frameX="2" frameY="0" frameWidth="646" frameHeight="838"/>
+	<SubTexture name="sakuraTree instance 10005" x="650" y="0" width="643" height="840" frameX="2" frameY="0" frameWidth="646" frameHeight="838"/>
+	<SubTexture name="sakuraTree instance 10006" x="1939" y="0" width="642" height="838" frameX="2" frameY="-2" frameWidth="646" frameHeight="838"/>
+	<SubTexture name="sakuraTree instance 10007" x="0" y="1675" width="642" height="838" frameX="2" frameY="-2" frameWidth="646" frameHeight="838"/>
+</TextureAtlas>

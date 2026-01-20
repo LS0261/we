@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="foliageLeft.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="mini bush0000" x="0" y="212" width="435" height="210" frameX="2" frameY="2" frameWidth="432" frameHeight="208"/>
+	<SubTexture name="mini bush0001" x="0" y="0" width="436" height="212" frameX="2" frameY="2" frameWidth="432" frameHeight="208"/>
+</TextureAtlas>

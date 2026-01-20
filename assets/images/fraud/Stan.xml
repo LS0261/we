@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Stan.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Stan0000" x="0" y="0" width="464" height="447" frameX="0" frameY="0" frameWidth="465" frameHeight="447"/>
+	<SubTexture name="Stan0001" x="0" y="0" width="464" height="447" frameX="0" frameY="0" frameWidth="465" frameHeight="447"/>
+	<SubTexture name="Stan0002" x="464" y="0" width="465" height="447"/>
+	<SubTexture name="Stan0003" x="464" y="0" width="465" height="447"/>
+	<SubTexture name="Stan0004" x="0" y="447" width="464" height="447" frameX="-1" frameY="0" frameWidth="465" frameHeight="447"/>
+	<SubTexture name="Stan0005" x="0" y="447" width="464" height="447" frameX="-1" frameY="0" frameWidth="465" frameHeight="447"/>
+</TextureAtlas>

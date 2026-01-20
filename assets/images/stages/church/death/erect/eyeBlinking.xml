@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="eyeBlinking.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="eyeBall instance 10000" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10001" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10002" x="70" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10003" x="70" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10004" x="70" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10005" x="70" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10006" x="0" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10007" x="0" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10008" x="0" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10009" x="0" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10010" x="140" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10011" x="140" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10012" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10013" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10014" x="70" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10015" x="70" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10016" x="70" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10017" x="70" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10018" x="0" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10019" x="0" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10020" x="0" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10021" x="0" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10022" x="140" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10023" x="140" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10024" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10025" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10026" x="70" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10027" x="70" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10028" x="70" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10029" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10030" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10031" x="70" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10032" x="70" y="70" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10033" x="70" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10034" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10035" x="140" y="0" width="70" height="70" frameX="2" frameY="2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10036" x="70" y="140" width="70" height="68" frameX="2" frameY="1" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10037" x="70" y="140" width="70" height="68" frameX="2" frameY="1" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10038" x="140" y="140" width="70" height="64" frameX="2" frameY="-2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10039" x="140" y="140" width="70" height="64" frameX="2" frameY="-2" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10040" x="210" y="0" width="69" height="59" frameX="1" frameY="-5" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10041" x="210" y="0" width="69" height="59" frameX="1" frameY="-5" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10042" x="0" y="140" width="70" height="68" frameX="2" frameY="1" frameWidth="66" frameHeight="66"/>
+	<SubTexture name="eyeBall instance 10043" x="0" y="140" width="70" height="68" frameX="2" frameY="1" frameWidth="66" frameHeight="66"/>
+</TextureAtlas>

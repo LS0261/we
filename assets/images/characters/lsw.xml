@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lsw.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="LS Dancing Beat0000" x="3185" y="1223" width="571" height="1204" frameX="-428" frameY="-145" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0001" x="3185" y="1223" width="571" height="1204" frameX="-428" frameY="-145" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0002" x="2585" y="1215" width="564" height="1208" frameX="-437" frameY="-141" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0003" x="2585" y="1215" width="564" height="1208" frameX="-437" frameY="-141" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0004" x="591" y="2429" width="578" height="1219" frameX="-430" frameY="-129" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0005" x="591" y="2429" width="578" height="1219" frameX="-430" frameY="-129" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0006" x="0" y="2429" width="591" height="1222" frameX="-421" frameY="-126" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0007" x="0" y="2429" width="591" height="1222" frameX="-421" frameY="-126" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0008" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0009" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0010" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0011" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0012" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0013" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0014" x="1361" y="0" width="621" height="1206" frameX="-405" frameY="-143" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0015" x="1361" y="0" width="621" height="1206" frameX="-405" frameY="-143" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0016" x="735" y="0" width="626" height="1206" frameX="-399" frameY="-143" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0017" x="735" y="0" width="626" height="1206" frameX="-399" frameY="-143" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0018" x="1361" y="1206" width="615" height="1213" frameX="-405" frameY="-135" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0019" x="1361" y="1206" width="615" height="1213" frameX="-405" frameY="-135" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0020" x="1982" y="0" width="603" height="1221" frameX="-416" frameY="-127" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0021" x="1982" y="0" width="603" height="1221" frameX="-416" frameY="-127" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0022" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0023" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0024" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0025" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0026" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="LS Dancing Beat0027" x="3185" y="0" width="596" height="1223" frameX="-419" frameY="-125" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="left0000" x="735" y="1206" width="621" height="1215" frameX="-332" frameY="-134" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="left0001" x="735" y="1206" width="621" height="1215" frameX="-332" frameY="-134" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="left0002" x="2585" y="0" width="600" height="1215" frameX="-369" frameY="-134" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="left0003" x="2585" y="0" width="600" height="1215" frameX="-369" frameY="-134" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="left0004" x="2585" y="0" width="600" height="1215" frameX="-369" frameY="-134" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="left0005" x="2585" y="0" width="600" height="1215" frameX="-369" frameY="-134" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="left0006" x="2585" y="0" width="600" height="1215" frameX="-369" frameY="-134" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="right0000" x="0" y="1213" width="726" height="1216" frameX="-472" frameY="-133" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="right0001" x="0" y="1213" width="726" height="1216" frameX="-472" frameY="-133" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="right0002" x="0" y="0" width="735" height="1213" frameX="-469" frameY="-136" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="right0003" x="0" y="0" width="735" height="1213" frameX="-469" frameY="-136" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="right0004" x="0" y="0" width="735" height="1213" frameX="-469" frameY="-136" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="right0005" x="0" y="0" width="735" height="1213" frameX="-469" frameY="-136" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="right0006" x="0" y="0" width="735" height="1213" frameX="-469" frameY="-136" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="up0000" x="3781" y="1245" width="544" height="1254" frameX="-454" frameY="-95" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="up0001" x="3781" y="1245" width="544" height="1254" frameX="-454" frameY="-95" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="up0002" x="3781" y="0" width="557" height="1245" frameX="-439" frameY="-104" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="up0003" x="3781" y="0" width="557" height="1245" frameX="-439" frameY="-104" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="up0004" x="3781" y="0" width="557" height="1245" frameX="-439" frameY="-104" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="up0005" x="3781" y="0" width="557" height="1245" frameX="-439" frameY="-104" frameWidth="1500" frameHeight="1500"/>
+	<SubTexture name="up0006" x="3781" y="0" width="557" height="1245" frameX="-439" frameY="-104" frameWidth="1500" frameHeight="1500"/>
+</TextureAtlas>

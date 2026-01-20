@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="ruv_indoors.png" width="1858" height="787">
+	<SubTexture name="ruv down0000" x="1" y="1" width="253" height="349" frameX="-0" frameY="-1" frameWidth="253" frameHeight="350"/>
+	<SubTexture name="ruv down0001" x="1" y="1" width="253" height="349" frameX="-0" frameY="-1" frameWidth="253" frameHeight="350"/>
+	<SubTexture name="ruv down0002" x="257" y="1" width="251" height="350" frameX="-1" frameY="-0" frameWidth="253" frameHeight="350"/>
+	<SubTexture name="ruv down0003" x="257" y="1" width="251" height="350" frameX="-1" frameY="-0" frameWidth="253" frameHeight="350"/>
+	<SubTexture name="ruv down0004" x="257" y="1" width="251" height="350" frameX="-1" frameY="-0" frameWidth="253" frameHeight="350"/>
+	<SubTexture name="ruv down0005" x="257" y="1" width="251" height="350" frameX="-1" frameY="-0" frameWidth="253" frameHeight="350"/>
+	<SubTexture name="ruv down0006" x="257" y="1" width="251" height="350" frameX="-1" frameY="-0" frameWidth="253" frameHeight="350"/>
+	<SubTexture name="ruv idle0000" x="1099" y="1" width="233" height="376" frameX="-0" frameY="-3" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0001" x="1099" y="1" width="233" height="376" frameX="-0" frameY="-3" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0002" x="1335" y="1" width="229" height="378" frameX="-1" frameY="-1" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0003" x="1335" y="1" width="229" height="378" frameX="-1" frameY="-1" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0004" x="1" y="353" width="227" height="379" frameX="-2" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0005" x="1" y="353" width="227" height="379" frameX="-2" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0006" x="231" y="354" width="226" height="379" frameX="-3" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0007" x="231" y="354" width="226" height="379" frameX="-3" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0008" x="753" y="375" width="240" height="379" frameX="-4" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0009" x="753" y="375" width="240" height="379" frameX="-4" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0010" x="753" y="375" width="240" height="379" frameX="-4" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0011" x="753" y="375" width="240" height="379" frameX="-4" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0012" x="753" y="375" width="240" height="379" frameX="-4" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv idle0013" x="753" y="375" width="240" height="379" frameX="-4" frameY="-0" frameWidth="244" frameHeight="379"/>
+	<SubTexture name="ruv left0000" x="1567" y="1" width="290" height="378" frameX="-0" frameY="-0" frameWidth="290" frameHeight="378"/>
+	<SubTexture name="ruv left0001" x="1567" y="1" width="290" height="378" frameX="-0" frameY="-0" frameWidth="290" frameHeight="378"/>
+	<SubTexture name="ruv left0002" x="460" y="374" width="290" height="378" frameX="-0" frameY="-0" frameWidth="290" frameHeight="378"/>
+	<SubTexture name="ruv left0003" x="460" y="374" width="290" height="378" frameX="-0" frameY="-0" frameWidth="290" frameHeight="378"/>
+	<SubTexture name="ruv left0004" x="460" y="374" width="290" height="378" frameX="-0" frameY="-0" frameWidth="290" frameHeight="378"/>
+	<SubTexture name="ruv left0005" x="460" y="374" width="290" height="378" frameX="-0" frameY="-0" frameWidth="290" frameHeight="378"/>
+	<SubTexture name="ruv right0000" x="511" y="1" width="291" height="370" frameX="-0" frameY="-3" frameWidth="291" frameHeight="373"/>
+	<SubTexture name="ruv right0001" x="511" y="1" width="291" height="370" frameX="-0" frameY="-3" frameWidth="291" frameHeight="373"/>
+	<SubTexture name="ruv right0002" x="805" y="1" width="291" height="371" frameX="-0" frameY="-2" frameWidth="291" frameHeight="373"/>
+	<SubTexture name="ruv right0003" x="805" y="1" width="291" height="371" frameX="-0" frameY="-2" frameWidth="291" frameHeight="373"/>
+	<SubTexture name="ruv right0004" x="805" y="1" width="291" height="371" frameX="-0" frameY="-2" frameWidth="291" frameHeight="373"/>
+	<SubTexture name="ruv right0005" x="805" y="1" width="291" height="371" frameX="-0" frameY="-2" frameWidth="291" frameHeight="373"/>
+	<SubTexture name="ruv right0006" x="805" y="1" width="291" height="371" frameX="-0" frameY="-2" frameWidth="291" frameHeight="373"/>
+	<SubTexture name="ruv up0000" x="1254" y="382" width="252" height="404" frameX="-2" frameY="-7" frameWidth="255" frameHeight="411"/>
+	<SubTexture name="ruv up0001" x="1254" y="382" width="252" height="404" frameX="-2" frameY="-7" frameWidth="255" frameHeight="411"/>
+	<SubTexture name="ruv up0002" x="996" y="380" width="255" height="402" frameX="-0" frameY="-8" frameWidth="255" frameHeight="411"/>
+	<SubTexture name="ruv up0003" x="996" y="380" width="255" height="402" frameX="-0" frameY="-8" frameWidth="255" frameHeight="411"/>
+	<SubTexture name="ruv up0004" x="996" y="380" width="255" height="402" frameX="-0" frameY="-8" frameWidth="255" frameHeight="411"/>
+	<SubTexture name="ruv up0005" x="996" y="380" width="255" height="402" frameX="-0" frameY="-8" frameWidth="255" frameHeight="411"/>
+	<SubTexture name="ruv up0006" x="996" y="380" width="255" height="402" frameX="-0" frameY="-8" frameWidth="255" frameHeight="411"/>
+</TextureAtlas>

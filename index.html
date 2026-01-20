@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>FNF Web Player</title>
+
+  <style>
+    body {
+      background: #000;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    #gameContainer {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+      background: #000;
+      margin: auto;
+    }
+
+    #hud {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ===== LOADING ===== */
+    #menu {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      z-index: 2;
+      transition: opacity 0.6s ease;
+    }
+
+    #loadingText {
+      font-size: 32px;
+      letter-spacing: 2px;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    @font-face {
+      font-family: 'VRCFont';
+      src: url('assets/data/fonts/vcr.ttf') format('truetype');
+    }
+
+    body, button {
+      font-family: 'VRCFont', Arial, sans-serif;
+      color: white;
+      -webkit-text-stroke: 1px black;
+      text-stroke: 1px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="gameContainer">
+
+    <!-- LOADING -->
+    <div id="menu">
+      <div id="loadingText">Cargando</div>
+    </div>
+
+    <!-- CANVAS -->
+    <canvas id="canvas"></canvas>
+
+    <!-- HUD -->
+    <div id="hud"></div>
+  </div>
+
+  <script src="sc/libs/fengari-web.js"></script>
+  <script type="module" src="sc/object/notes.js"></script>
+
+  <script type="module">
+    import { startTitle } from './sc/states/start.js';
+
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+      let w = window.innerWidth;
+      let h = window.innerHeight;
+      let aspect = 16 / 9;
+
+      if (w / h > aspect) {
+        canvas.height = h;
+        canvas.width = h * aspect;
+      } else {
+        canvas.width = w;
+        canvas.height = w / aspect;
+      }
+
+      canvas.style.width = canvas.width + "px";
+      canvas.style.height = canvas.height + "px";
+    }
+
+    window.addEventListener("resize", resizeCanvas);
+    window.addEventListener("orientationchange", resizeCanvas);
+
+    window.addEventListener("load", () => {
+      resizeCanvas();
+      startTitle();
+    });
+  </script>
+
+  <script type="module">
+    import { FPSCounter } from "./sc/debug/FPSCounter.js";
+    const fpsCounter = new FPSCounter(120);
+  </script>
+
+  <!-- LOADING LOGIC -->
+  <script>
+    const loadingText = document.getElementById("loadingText");
+    const menu = document.getElementById("menu");
+
+    let dots = 0;
+    const loadingInterval = setInterval(() => {
+      dots = (dots + 1) % 4;
+      loadingText.textContent = "Cargando" + ".".repeat(dots);
+    }, 500);
+
+    function finishLoading() {
+      clearInterval(loadingInterval);
+      loadingText.textContent = "¡Cargado!";
+
+      setTimeout(() => {
+        menu.style.opacity = "0";
+        setTimeout(() => {
+          menu.style.display = "none";
+        }, 600);
+      }, 800);
+    }
+
+    // DEMO (cambia esto cuando tengas carga real)
+    setTimeout(finishLoading, 3000);
+  </script>
+
+</body>
+</html>

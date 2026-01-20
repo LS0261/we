@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="sarventeLaughingSillhouette.png">
+	
+	
+	<SubTexture name="sarvente laugh sillhouetete instance 10000" x="3.0" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10001" x="3.0" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10002" x="379.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10003" x="379.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10004" x="756.0" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10005" x="756.0" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10006" x="1132.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10007" x="1132.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10008" x="1132.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10009" x="1132.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10010" x="1132.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10011" x="1132.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10012" x="1132.5" y="3.0" width="376.5" height="523.5" />
+	<SubTexture name="sarvente laugh sillhouetete instance 10013" x="1132.5" y="3.0" width="376.5" height="523.5" />
+</TextureAtlas>
