@@ -36,7 +36,8 @@ this.confirmBlinkDuration = 1.0; // 1 segundo de parpadeo antes de transición
 this.confirmBlinkElapsed = 0;
 this.lastSelectedCenter = 0;
 
-    this.init();
+
+    //this.init();
   }
 
   async init() {
@@ -103,6 +104,12 @@ this.lastSelectedCenter = 0;
 window.addEventListener("touchstart", (e) => this.handleTouchStart(e));
 window.addEventListener("touchend", (e) => this.handleTouchEnd(e));
   }
+
+  // Dentro de MainMenuState
+async load() {
+  // Esto forzará que se carguen todos los gráficos y anims
+  await this.init(); // ya que tu init() es async y carga todo
+}
 
 handleInput(e){
   if(this.selectedSomethin) return;
@@ -354,8 +361,10 @@ loop(timestamp) {
 
       // Lanzar transición según la opción confirmada
       if(this.selectedOption === "story_mode"){
-        new CustomFadeTransition(this.game, 1.0, () => {
-          this.game.changeState(new FreeplayState(this.game));
+        new CustomFadeTransition(this.game, 1.0, async () => {
+              const newState = new FreeplayState(this.game);
+              await newState.load();
+              this.game.changeState(newState);
         });
       }
       else if(this.selectedOption === "freeplay"){

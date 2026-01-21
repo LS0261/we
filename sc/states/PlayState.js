@@ -287,15 +287,15 @@ this.camPos = {
 };
     const scrollTime = this.scrollDuration / 1000 / this.fixedSpeed; // en segundos
 
-    this.healthBar = new HealthBar(() => this.playerHealth, this.playerMaxHealth);
+    this.healthBar = new HealthBar(() => this.playerHealth, this.playerMaxHealth, false);
 
     //this.healthBar.setColors("#f00", "#0f0");
 
     this.pauseMenu = new PauseMenuSubstate(this);  
     //window.addEventListener("resize", () => this.resize());
   //window.addEventListener("orientationchange", () => this.resize());
-  }/*
-resize() {
+  }
+  /*resize() {
   const width = this.container.clientWidth;
   const height = this.container.clientHeight;
 
@@ -490,6 +490,9 @@ this.camGame.end();
   this.stage?.update(delta);
   this.stage?.draw(this.camGame.ctx);
 
+  this.createTouchLanes?.update(delta);
+  this.createTouchLanes?.draw(this.camHUD.ctx);
+
   this.boyfriend?.update(delta);
   this.dad?.update(delta);
   this.gf?.update(delta);
@@ -516,10 +519,8 @@ if (this.countdownText) {
   ctxHUD.scale(hudZoom, hudZoom);
   ctxHUD.translate(-this.W / 2, -this.H / 2);
 
-if (this.healthBar) {
-  this.healthBar.update();
-  this.healthBar.draw(ctxHUD);
-}
+this.healthBar.update(delta);
+this.healthBar.draw(this.camHUD.ctx);
 
 if (this.iconP1 && this.iconP2 && this.healthBar) {
   this.iconP1.update();
@@ -564,8 +565,8 @@ if (this.iconP1 && this.iconP2 && this.healthBar) {
 
   ctxHUD.fillStyle = "#fff";
   ctxHUD.font = "20px 'VRCFont' ";
-  const hudTextY = (this.healthBar?.y || 50) + (this.healthBar?.barHeight || 20) + 30;
-  const accuracy = this.calculateAccuracy?.() || 0;
+  const hudTextY = (this.healthBar?.y) + 40 * 1.5;
+  const accuracy = this.calculateAccuracy?.();
   ctxHUD.textAlign = "center";
   ctxHUD.fillText(`Score: ${this.score} | Misses: ${this.misses} | Accuracy: ${accuracy.toFixed(1)}%`, this.W / 2, hudTextY);
   ctxHUD.textAlign = "start";
@@ -717,7 +718,7 @@ for (let i = this.bfNotes.length - 1; i >= 0; i--) {
     }
 }
 */
-drawProgressBar(this, ctxHUD);
+//drawProgressBar(this, ctxHUD);
 
 if (this.botplayAlpha > 0.01) {
   ctxHUD.save();

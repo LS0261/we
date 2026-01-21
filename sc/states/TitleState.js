@@ -291,18 +291,24 @@ playMenuMusic() {
     });
   }
 
-  onEnterPressed() {
-    if (this.transitioning || !this.allowEnter) return;
-    this.transitioning = true;
+async onEnterPressed() {
+  if (this.transitioning || !this.allowEnter) return;
+  this.transitioning = true;
 
-    const audio = new Audio(Paths.sound('confirmMenu'));
-    audio.volume = 0.7;
-    audio.play();
+  const audio = new Audio(Paths.sound('confirmMenu'));
+  audio.volume = 0.7;
+  audio.play();
 
-    new CustomFadeTransition(this.game, 1.0, () => {
-      this.game.changeState(new MainMenuState(this.game));
-    });
-  }
+  new CustomFadeTransition(this.game, 1.0, async () => {
+    const newState = new MainMenuState(this.game);
+
+    // Espera a que se cargue todo
+    await newState.load();
+
+    // Ahora sí cambiar de estado
+    this.game.changeState(newState);
+  });
+}
 
   doTransitionToMenu() {
     if (this.transitioning) return;

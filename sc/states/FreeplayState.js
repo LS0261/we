@@ -70,7 +70,7 @@ export default class FreeplayState {
     this.rafId = null;
     this.gridOffset = 0;
 
-    this.init();
+    //this.init();
   }
 
 async init() {
@@ -143,6 +143,11 @@ async init() {
   this.rafId = requestAnimationFrame((t) => this.loop(t));
 }
 
+async load() {
+  // Esto forzará que se carguen todos los gráficos y anims
+  await this.init(); // ya que tu init() es async y carga todo
+}
+
   generateSongList() {
     this.coolTextObjects = [];
     let startY = 200;
@@ -192,27 +197,31 @@ async init() {
     audio.play();
   }
 
-  acceptSelection() {
-    if (this.transitioning) return;
-    this.transitioning = true;
+async acceptSelection() {
+  if (this.transitioning) return;
+  this.transitioning = true;
 
-    this.confirmAnimation.active = true;
-    this.confirmAnimation.progress = 0;
+  this.confirmAnimation.active = true;
+  this.confirmAnimation.progress = 0;
 
-    const song = this.songs[this.curSelected];
-    console.log("Seleccionaste canción:", song.name, "Dificultad:", this.difficulties[this.curDifficulty]);
+  const song = this.songs[this.curSelected];
+  const difficulty = this.difficulties[this.curDifficulty];
+  console.log("Seleccionaste canción:", song.name, "Dificultad:", difficulty);
 
-    const audio = new Audio(Paths.sound("confirmMenu"));
-    audio.play();
+  const audio = new Audio(Paths.sound("confirmMenu"));
+  audio.play();
 
-    setTimeout(() => {
-      new CustomFadeTransition(this.game, 1.0, () => {
-        this.game.changeState(
-          new PlayState(this.game, song.name, this.difficulties[this.curDifficulty])
-        );
-      });
-    }, this.confirmAnimation.duration * 1000);
-  }
+  // Esperar a que termine la animación de confirmación
+  await new Promise(resolve => setTimeout(resolve, this.confirmAnimation.duration * 1000));
+
+  // Crear el nuevo estado y cargar assets
+  const newState = new PlayState(this.game, song.name, difficulty);
+  await newState.load(); // 🔑 espera a que todo se cargue antes de cambiar de estado
+
+  new CustomFadeTransition(this.game, 1.0, () => {
+    this.game.changeState(newState);
+  });
+}
 
   cancel() {
     if (this.transitioning) return;
