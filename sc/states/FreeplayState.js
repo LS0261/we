@@ -218,8 +218,9 @@ async acceptSelection() {
   const newState = new PlayState(this.game, song.name, difficulty);
   await newState.load(); // 🔑 espera a que todo se cargue antes de cambiar de estado
 
-  new CustomFadeTransition(this.game, 1.0, () => {
+  new CustomFadeTransition(this.game, 2.0, () => {
     this.game.changeState(newState);
+    destroy();
   });
 }
 

@@ -4,6 +4,7 @@ import { Alphabet, AlphaCharacter } from "../object/alphabet.js";
 import MainMenuState from './MainMenuState.js';
 import FlxSpriteJS from "../utils/FlxSpriteJS.js";
 import CustomFadeTransition from "../backend/CustomFadeTransition.js";
+import { TrailEffect } from '../backend/TrailEffect.js';
 
 export default class TitleState {
   constructor(game) {
@@ -284,11 +285,12 @@ playMenuMusic() {
       }
     });
 
-    window.addEventListener('pointerdown', () => {
-      if (this.transitioning) return;
-      if (this.introPlaying) this.skipIntro();
-      else if (this.allowEnter) this.onEnterPressed();
-    });
+const trail = new TrailEffect(document.body, () => {
+    // callback cuando es tap sin mover → simula Enter
+    if (this.transitioning) return;
+    if (this.introPlaying) this.skipIntro();
+    else if (this.allowEnter) this.onEnterPressed();
+});
   }
 
 async onEnterPressed() {
