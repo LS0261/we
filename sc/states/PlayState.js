@@ -75,7 +75,7 @@ export default class PlayState {
     this.ctxGame = this.camGame.ctx;
     this.ctxHUD = this.camHUD.ctx;
 
-this.baseCamGameZoom = 0.7;   // equivalente a defaultCamZoom
+this.baseCamGameZoom = 1.0;   // equivalente a defaultCamZoom
 this.baseCamHUDZoom  = 1.0;
 
 this.camGameZoom = this.baseCamGameZoom;
@@ -390,34 +390,35 @@ getSongPos() {
   }
 
 updateCamera() {
-  // Verificar si tenemos un objetivo de cámara (camTarget) actualizado por la sección
-  let target = this.camTarget || null;  // Usamos el camTarget configurado por la sección
+  let target = this.camTarget || null;
+  if (!target) return;
 
-  if (!target) return;  // Si no hay objetivo, salimos
-
-  // Obtenemos la posición media del objetivo (midpoint) del personaje
+  // Posición media + offset de cámara
   const mid = target.getMidpoint?.() || [target.x + (target.width || 0) / 2, target.y + (target.height || 0) / 2];
-  let tx = mid[0], ty = mid[1];
+  const camPos = target.getCameraPosition ? target.getCameraPosition() : mid;
 
-  // Iniciar la posición de la cámara si no se ha inicializado aún
-  if (!this.camPos) this.camPos = { x: tx, y: ty };
+  // Inicializar camPos si no existe
+  if (!this.camPos) this.camPos = { x: camPos[0], y: camPos[1] };
 
-  // Movimiento suave hacia el objetivo de la cámara (sin considerar animaciones)
-  this.camPos.x += (tx - this.camPos.x) * this.cameraLerp;  // Suavizado en X
-  this.camPos.y += (ty - this.camPos.y) * this.cameraLerp;  // Suavizado en Y
+  // Suavizado
+  this.camPos.x += (camPos[0] - this.camPos.x) * this.cameraLerp;
+  this.camPos.y += (camPos[1] - this.camPos.y) * this.cameraLerp;
 
-  // Aplicar la transformación de la cámara al contexto
-  if (this.camGame?.ctx) {
-    this.camGame.ctx.setTransform(1, 0, 0, 1, 0, 0);  // Resetear transformación
-    this.camGame.ctx.translate(this.W / 2, this.H / 2);  // Mover al centro de la pantalla
-    this.camGame.ctx.scale(this.camGameZoom, this.camGameZoom);  // Escalar según el zoom de la cámara
-    this.camGame.ctx.translate(-this.camPos.x, -this.camPos.y);  // Desplazar la cámara hacia el objetivo
-  }
-
-  // Actualizar la posición de la cámara (si es necesario para algún otro uso)
+  // Guardar posición en la cámara
+  this.camGame.x = this.camPos.x;
   this.camGame.y = this.camPos.y;
-}
 
+  // 🔹 Debug opcional
+  if (this.showCamDebug) {
+    const ctx = this.camGame.ctx;
+    ctx.save();
+    ctx.fillStyle = "red";
+    ctx.beginPath();
+    ctx.arc(this.camPos.x, this.camPos.y, 5 / this.camGame.zoom, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
 
   onSongEnd() {
     console.log("Canción terminada 🎵, regresando a Freeplay...");
@@ -482,24 +483,23 @@ if (this.playing && this.audioInst && songPos >= this.audioInst.duration * 1000 
 
 this.camGame.zoom = this.camGameZoom;
 this.updateCamera();
-this.camGame.begin();  // ya limpia automáticamente
+this.boyfriend?.update(delta);
+this.dad?.update(delta);
+this.gf?.update(delta);
+this.stage?.update(delta);
+this.createTouchLanes?.update(delta);
 
-//if (this.stage?.draw) this.stage.draw(this.camGame.ctx);
+this.camGame.zoom = this.camGameZoom;
+//this.camGame.rotation += 0.001; // rotación suave en radianes
+this.camGame.begin();
+this.stage?.draw(this.camGame.ctx, this.camGame);
+
+this.gf?.draw(this.camGame.ctx);
+this.dad?.draw(this.camGame.ctx);
+this.boyfriend?.draw(this.camGame.ctx);
 this.camGame.end();
+this.createTouchLanes?.draw(this.camHUD.ctx);
 
-  this.stage?.update(delta);
-  this.stage?.draw(this.camGame.ctx);
-
-  this.createTouchLanes?.update(delta);
-  this.createTouchLanes?.draw(this.camHUD.ctx);
-
-  this.boyfriend?.update(delta);
-  this.dad?.update(delta);
-  this.gf?.update(delta);
-
-  this.gf?.draw(this.camGame.ctx);
-  this.dad?.draw(this.camGame.ctx);
-  this.boyfriend?.draw(this.camGame.ctx);
   // ---------------- HUD LAYER ----------------
   ctxHUD.setTransform(1, 0, 0, 1, 0, 0);
   ctxHUD.clearRect(0, 0, this.hudCanvas.width, this.hudCanvas.height);

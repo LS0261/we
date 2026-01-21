@@ -47,13 +47,9 @@ screenCenter(canvas = this.canvas, axis = "XY") {
 }
 
 draw(ctx) {
-  if (
-    !this.visible ||
-    !this.image ||
-    !(this.image instanceof HTMLImageElement)
-  ) return;
-
+  if (!this.visible || !this.image) return;
   ctx.imageSmoothingEnabled = this.antialiasing;
+
   ctx.drawImage(this.image, this.pos[0], this.pos[1], this.width, this.height);
 }
 

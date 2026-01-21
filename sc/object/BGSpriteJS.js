@@ -80,9 +80,10 @@ export default class BGSpriteJS extends FlxSpriteJS {
         this.animation.update(dt);
     }
 
-    draw(ctx) {
-        super.draw(ctx);
-    }
+draw(ctx, cam = { x: 0, y: 0 }) {
+    super.draw(ctx, cam);
+}
+
     add(sprite) {
     this.members.push(sprite);
     return sprite; // Como FlxGroup, devuelve el sprite

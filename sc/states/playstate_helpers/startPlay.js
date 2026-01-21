@@ -173,12 +173,10 @@ export async function startPlay(ps, songName) {
   const res = await fetch(Paths.songJSON(songName));
   const json = await res.json();
 
-  // ---------------------------
-  // POSICIONES
-  // ---------------------------
-  const bfPos = json.boyfriend ?? [850, 350]; //850, 350
-  const dadPos = json.opponent ?? [100, 50]; //100, 50
-  const gfPos = json.girlfriend ?? [500, 50]; //500, 50
+  const bfPos = Array.isArray(json.boyfriend) ? json.boyfriend : [770, 470];
+  const dadPos = Array.isArray(json.opponent) ? json.opponent : [-100, -70];
+  const gfPos = Array.isArray(json.girlfriend) ? json.girlfriend : [400, 130];
+
   const hideGF = json.hide_girlfriend ?? false;
   const cameraSpeed = json.camera_speed ?? 1;
 
@@ -199,9 +197,6 @@ export async function startPlay(ps, songName) {
   ps.misses = 0;
   ps.uiGroup = ps.uiGroup || [];
 
-  // ---------------------------
-  // AUDIO INSTRUMENTAL
-  // ---------------------------
   ps.audioInst = new Audio(Paths.songInst(songName));
   ps.audioInst.volume = 0.5;
 
@@ -213,57 +208,56 @@ export async function startPlay(ps, songName) {
     gf: json.song?.gfVersion ?? "gf"
   };
 
-// ---------------------------
-// CREAR SOLO GF ÚNICA
-// ---------------------------
+  let gfInstance = null;
 
-let gfInstance = null;
-
-// Crear GF normalmente
-try {
-  gfInstance = new Character(charNames.gf, false);
-  await gfInstance.init({ position: gfPos });
-  gfInstance.visible = !hideGF;
-} catch {
-  gfInstance = new Character("gf", false);
-  await gfInstance.init({ position: gfPos });
-  gfInstance.visible = !hideGF;
-}
-
-// Crear Dad: si apunta a la misma GF, reutilizamos gfInstance
-if (charNames.dad === charNames.gf) {
-  ps.dad = gfInstance;
-  // Opcional: si quieres, ajusta la posición de dad
-  ps.dad.x = dadPos[0];
-  ps.dad.y = dadPos[1];
-} else {
   try {
-    ps.dad = new Character(charNames.dad, false);
-    await ps.dad.init({ position: dadPos });
+    gfInstance = new Character(charNames.gf, false);
+    await gfInstance.init({ position: gfPos });
   } catch {
-    ps.dad = new Character("dad", false);
-    await ps.dad.init({ position: dadPos });
+    gfInstance = new Character("gf", false);
+    await gfInstance.init({ position: gfPos });
   }
-}
+  gfInstance.positionArray = gfPos;     // ✅ aseguramos que la posición sea correcta
+  gfInstance.updatePosition();          // ✅ actualiza x/y
+  gfInstance.visible = !hideGF;         // mostrar u ocultar GF
 
-// Crear Boyfriend normalmente
-try {
-  ps.boyfriend = new Character(charNames.bf, true);
-  await ps.boyfriend.init({ position: bfPos });
-  ps.boyfriend.updatePosition();
-} catch {
-  ps.boyfriend = new Character("bf", true);
-  await ps.boyfriend.init({ position: bfPos });
-  ps.boyfriend.updatePosition();
-}
+  if (charNames.dad === charNames.gf) {
+    ps.dad = gfInstance;
+    ps.dad.positionArray = dadPos;
+    ps.dad.updatePosition();
+  } else {
+    try {
+      ps.dad = new Character(charNames.dad, false);
+      await ps.dad.init({ position: dadPos });
+    } catch {
+      ps.dad = new Character("dad", false);
+      await ps.dad.init({ position: dadPos });
+    }
+    ps.dad.positionArray = dadPos;
+    ps.dad.updatePosition();
+  }
 
-// Guardamos personajes en array
-ps.gf = gfInstance;
-ps.characters = [ps.dad, ps.gf, ps.boyfriend];
+  try {
+    ps.boyfriend = new Character(charNames.bf, true);
+    await ps.boyfriend.init({ position: bfPos });
+  } catch {
+    ps.boyfriend = new Character("bf", true);
+    await ps.boyfriend.init({ position: bfPos });
+  }
+  ps.boyfriend.positionArray = bfPos;
+  ps.boyfriend.updatePosition();
+
+  ps.gf = gfInstance;
+  ps.characters = [ps.dad, ps.gf, ps.boyfriend];
+
+  console.log("Posiciones iniciales:");
+  console.log("GF:", ps.gf.x, ps.gf.y);
+  console.log("Dad:", ps.dad.x, ps.dad.y);
+  console.log("BF:", ps.boyfriend.x, ps.boyfriend.y);
 
   loadCharacterVoices(ps, json);
 
-  ps.stage = new StageWeek1(ps);
+  ps.stage = new TheNothingWorld(ps, ps.camGame);
   await ps.stage.create();
 
   ps.mustHitSection = false;

@@ -13,7 +13,7 @@ export class Character extends SpriteAnim {
     this.healthIcon = null;
 
     this.positionArray = [0, 0];
-    this.cameraPosition = [0, 0];  // Esta será la que invertiremos
+    this.cameraPosition = [0, 0];  // Offset de cámara
     this.scale = 1;
 
     this.isGF = false;
@@ -21,29 +21,35 @@ export class Character extends SpriteAnim {
     this.specialAnimTime = 0;
 
     this.animOffsets = {};
+
+    this.showCamDebug = true;
   }
 
   async init(options = {}) {
     const res = await fetch(Paths.json(`characters/${this.name}`));
     this.data = await res.json();
 
-    // posición prioridad: options.position > JSON del personaje > [0,0]
-    this.positionArray = options.position || this.data.position || [0,0];
+    // Prioridad de posición: options.position > JSON > [0,0]
+    this.positionArray = options.position || this.data.position || [0, 0];
     this.cameraPosition = this.data.camera_position || [0, 0];
     this.scale = this.data.scale || 1;
     this.isGF = this.data.type === "gf";
 
     await super.init({
       imageName: this.data.image,
-      position: [...this.positionArray], // Aquí toma la posición correcta
+      position: [...this.positionArray],
       scale: this.scale,
     });
+
     this.x = this.positionArray[0];
     this.y = this.positionArray[1];
 
-    // Invertir las posiciones de cámara
-    this.cameraPosition = [-this.cameraPosition[0], -this.cameraPosition[1]];
+    // 🔹 Invertir la cámara solo si no es player (opponent)
+    if (!this.isPlayer) {
+      this.cameraPosition = [-this.cameraPosition[0], -this.cameraPosition[1]];
+    }
 
+    // Animaciones con offsets invertidos
     for (let anim of this.data.animations) {
       let [ox, oy] = anim.offsets || [0, 0];
       ox = -ox;
@@ -52,36 +58,32 @@ export class Character extends SpriteAnim {
     }
 
     this.healthIcon = this.data.healthicon || this.name;
-
     this.playAnim("idle");
   }
 
   updatePosition() {
-    // Cambiar pos[0] y pos[1] por x y y
     this.x = this.positionArray[0];
     this.y = this.positionArray[1];
     this.flipX = this.isPlayer ? !this.data.flip_x : this.data.flip_x;
   }
 
-playAnim(animName, isSpecial = false, beatLength = 0.5) {
-  if (!this.frames[animName]) return;
+  playAnim(animName, isSpecial = false, beatLength = 0.5) {
+    if (!this.frames[animName]) return;
 
-  // Reproduce la animación normalmente.
-  this.curAnim = this.play(animName, true);
-  this.updatePosition();
+    this.curAnim = this.play(animName, true);
+    this.updatePosition();
 
-  if (isSpecial) {
-    this.specialAnim = animName;
-    this.specialAnimTime = (this.data.sing_duration * 0.38 || 0.02) * beatLength;
-  } else {
-    this.specialAnim = null;
+    if (isSpecial) {
+      this.specialAnim = animName;
+      this.specialAnimTime = (this.data.sing_duration * 0.38 || 0.02) * beatLength;
+    } else {
+      this.specialAnim = null;
+    }
+
+    if (animName === "idle") {
+      this.specialAnimTime = -1; // Mantener idle-loop después
+    }
   }
-
-  // Si la animación es "idle", le asignamos que pase a "idle-loop" cuando termine
-  if (animName === "idle") {
-    this.specialAnimTime = -1;  // Esto indica que el ciclo de "idle-loop" comenzará después de que "idle" termine.
-  }
-}
 
   stopSinging() {
     this.specialAnim = null;
@@ -94,39 +96,31 @@ playAnim(animName, isSpecial = false, beatLength = 0.5) {
     if (this.frames["idle"]) this.playAnim("idle");
   }
 
-update(delta) {
-  super.update(delta);
+  update(delta) {
+    super.update(delta);
 
-  // Control de duración para animaciones especiales
-  if (this.specialAnim) {
-    if (this.specialAnimTime > 0) {
-      this.specialAnimTime -= delta;
-      if (this.specialAnimTime <= 0) {
-        this.stopSinging();
+    // Control de animaciones especiales
+    if (this.specialAnim) {
+      if (this.specialAnimTime > 0) {
+        this.specialAnimTime -= delta;
+        if (this.specialAnimTime <= 0) this.stopSinging();
+      } else if (this.specialAnimTime === -1) {
+        if (!this.isAnimationPlaying(this.specialAnim)) this.play(this.specialAnim, true);
       }
-    } else if (this.specialAnimTime === -1) {
-      // Mantener animación loop activa
-      if (!this.isAnimationPlaying(this.specialAnim)) {
-        this.play(this.specialAnim, true);  // Reproducir la animación en bucle
+    }
+
+    // Cambiar automáticamente idle -> idle-loop
+    if (this.isAnimationFinished()) {
+      if (this.curAnim && this.curAnim.name === "idle") {
+        const loopAnimName = "idle-loop";
+        if (this.frames[loopAnimName]) {
+          this.playAnim(loopAnimName);
+          this.specialAnim = loopAnimName;
+          this.specialAnimTime = -1;
+        }
       }
     }
   }
-
-  // 🔁 Cambio automático de "idle" -> "idle-loop"
-  if (this.isAnimationFinished()) {
-    if (
-      this.curAnim &&
-      this.curAnim.name === "idle"  // Si la animación es "idle", pasamos a "idle-loop"
-    ) {
-      const loopAnimName = "idle-loop";  // Aquí se pasa a la animación loop
-      if (this.frames[loopAnimName]) {
-        this.playAnim(loopAnimName);  // Cambiar a la animación loop
-        this.specialAnim = loopAnimName;
-        this.specialAnimTime = -1;    // Esto indica que el loop continuará hasta que se cambie a otra animación
-      }
-    }
-  }
-}
 
   onBeat(beatLength = 0.5) {
     if (!this.specialAnim) {
@@ -147,16 +141,14 @@ update(delta) {
     return [this.x + this.width / 2, this.y + this.height / 2];
   }
 
+  // 🔹 No invertir la posición aquí, ya se maneja en init
   getCameraPosition() {
-    // Invertir la posición de la cámara
-    return [-this.x - this.cameraPosition[0], -this.y - this.cameraPosition[1]];
+    return [this.x + this.cameraPosition[0], this.y + this.cameraPosition[1]];
   }
 
   isAnimationPlaying(names) {
     if (!this.curAnim) return false;
-    if (Array.isArray(names)) {
-      return names.includes(this.curAnim.name);
-    }
+    if (Array.isArray(names)) return names.includes(this.curAnim.name);
     return this.curAnim.name === names;
   }
 }
