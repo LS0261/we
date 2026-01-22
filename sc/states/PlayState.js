@@ -144,16 +144,21 @@ this.hitWindowBFMax = 150;
     this.botplayAlpha = 0;      // alpha actual
 this.botplayAlphaTarget = 0; // alpha hacia donde va
 
-    this.keyToLane = {
-      ArrowLeft: 0,
-      KeyA: 0,
-      ArrowDown: 1,
-      KeyS: 1,
-      ArrowUp: 2,
-      KeyK: 2,
-      ArrowRight: 3,
-      KeyL: 3,
-    };
+this.updateKeyToLane = () => {
+  this.keyToLane = {};
+
+  const binds = this.clientPrefs.keyBinds;
+
+  binds.note_left.forEach(code => this.keyToLane[code] = 0);
+  binds.note_down.forEach(code => this.keyToLane[code] = 1);
+  binds.note_up.forEach(code => this.keyToLane[code] = 2);
+  binds.note_right.forEach(code => this.keyToLane[code] = 3);
+};
+
+// Inicializa keyToLane
+this.updateKeyToLane();
+
+
     bindInputs(this);
 
 window.addEventListener("keydown", (e) => {

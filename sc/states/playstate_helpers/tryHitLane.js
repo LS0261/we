@@ -108,13 +108,12 @@ export function updateHoldNotes(state) {
     }
 }
 
-// -------- CREAR RECTÁNGULOS DE TOUCH (MÓVIL) ------------
+// -------- CREAR RECTÁNGULOS DE TOUCH (MÓVIL/ESCRITORIO) ------------
 export function createTouchLanes(state, force = false) {
-    const isMobile = /Mobi|Android|Windowns|iPhone|iPad|iPod|Tablet/i.test(navigator.userAgent) ||                  
-    window.matchMedia("(pointer: coarse)").matches;
-                     
-    if (!isMobile && !force) return;
-    if (document.getElementById("touchLanes")) return;
+    const isMobile = /Mobi|Android|Windows|iPhone|iPad|iPod|Tablet/i.test(navigator.userAgent) ||
+                     window.matchMedia("(pointer: coarse)").matches;
+    if (!isMobile && !force) return; // solo activar en móvil por defecto
+    if (document.getElementById("touchLanes")) return; // ya existe
 
     const container = document.createElement("div");
     container.id = "touchLanes";
@@ -123,12 +122,14 @@ export function createTouchLanes(state, force = false) {
     container.style.top = "0";
     container.style.width = "100%";
     container.style.height = "100%";
-    container.style.pointerEvents = "none";
+    container.style.pointerEvents = "none"; // contenedor no bloquea, solo los botones
+    container.style.zIndex = "10000";
     document.body.appendChild(container);
 
     const colors = ["#C24B99", "#00FFFF", "#12FA05", "#F9393F"];
     const btns = [];
 
+    // Funciones de presionar y soltar
     function pressLane(i) {
         const btn = btns[i];
         btn.style.background = `${colors[i]}55`;
@@ -137,44 +138,44 @@ export function createTouchLanes(state, force = false) {
         tryHitLane(state, i);
     }
 
-function releaseLane(i) {
-    const btn = btns[i];
-    btn.style.background = "rgba(255,255,255,0.05)";
-    btn.style.boxShadow = "none";
-    state.lanesHeld[i].held = false;
+    function releaseLane(i) {
+        const btn = btns[i];
+        btn.style.background = "rgba(255,255,255,0.05)";
+        btn.style.boxShadow = "none";
+        state.lanesHeld[i].held = false;
+        // updateHoldNotes se encarga de limpiar holdNote
+    }
 
-    // No eliminamos holdNote aquí, lo hará updateHoldNotes
-}
-
-    // Crear botones
+    // Crear 4 botones grandes y separados
     for (let i = 0; i < 4; i++) {
         const btn = document.createElement("div");
         btn.style.position = "absolute";
-        btn.style.bottom = "8%";
-        btn.style.width = "15%";
-        btn.style.height = "25%";
+        btn.style.bottom = "5vh";        // un poco más arriba del borde
+        btn.style.width = "18vw";        // ancho cómodo
+        btn.style.height = "30vh";       // alto cómodo
         btn.style.border = `3px solid ${colors[i]}`;
         btn.style.borderRadius = "12px";
         btn.style.background = "rgba(255,255,255,0.05)";
         btn.style.pointerEvents = "auto";
         btn.style.touchAction = "none";
         btn.style.transition = "all 0.15s ease";
-        btn.style.zIndex = "10000";
+        btn.style.zIndex = "10001";
 
-        // Centrarlos en X
-        const spacing = 16;
-        btn.style.left = `${50 - (spacing * 1.5) + i * spacing}%`;
-        btn.style.transform = "translateX(-50%)";
+        // Distribuir horizontalmente
+        btn.style.left = `${10 + i * 22}%`; // separa los botones
+        btn.style.transform = "translateX(0%)";
 
         container.appendChild(btn);
         btns.push(btn);
     }
 
-    // Obtener lane en base a posición
+    // Detectar en qué botón cayó el toque
     function getLaneAt(x, y) {
         for (let i = 0; i < btns.length; i++) {
             const rect = btns[i].getBoundingClientRect();
-            if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
+            // tolerancia de 10px para no fallar toques
+            if (x >= rect.left - 10 && x <= rect.right + 10 &&
+                y >= rect.top - 10 && y <= rect.bottom + 10) {
                 return i;
             }
         }
@@ -183,15 +184,14 @@ function releaseLane(i) {
 
     const activeTouches = {};
 
+    // Eventos touch
     container.addEventListener("touchstart", (e) => {
         for (let t of e.changedTouches) {
             const lane = getLaneAt(t.clientX, t.clientY);
             if (lane !== -1) {
                 activeTouches[t.identifier] = lane;
                 pressLane(lane);
-            } else {
-                activeTouches[t.identifier] = -1; // empieza fuera, pero lo seguiremos
-            }
+            } else activeTouches[t.identifier] = -1;
         }
     });
 
@@ -199,7 +199,6 @@ function releaseLane(i) {
         for (let t of e.changedTouches) {
             const prevLane = activeTouches[t.identifier];
             const newLane = getLaneAt(t.clientX, t.clientY);
-
             if (newLane !== prevLane) {
                 if (prevLane !== -1) releaseLane(prevLane);
                 if (newLane !== -1) pressLane(newLane);

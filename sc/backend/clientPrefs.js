@@ -69,10 +69,10 @@ class ClientPrefs {
 
     // Bindings de teclado (simplificados)
     this.keyBinds = {
-      note_up: ['W', 'ArrowUp'],
-      note_left: ['A', 'ArrowLeft'],
-      note_down: ['S', 'ArrowDown'],
-      note_right: ['D', 'ArrowRight'],
+      note_up: ['KeyW', 'ArrowUp'],
+      note_left: ['KeyA', 'ArrowLeft'],
+      note_down: ['KeyK', 'ArrowDown'],
+      note_right: ['KeyL', 'ArrowRight'],
       ui_up: ['W', 'ArrowUp'],
       ui_left: ['A', 'ArrowLeft'],
       ui_down: ['S', 'ArrowDown'],

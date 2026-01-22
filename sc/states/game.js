@@ -1,16 +1,16 @@
-// game.js
+import ClientPrefs from "./../backend/clientPrefs.js";
 import TitleState from './TitleState.js';
-import MainMenuState from './MainMenuState.js';
 
 export const Game = {
   currentState: null,
   lastTimestamp: 0,
-
-  // ⚡ flags globales
-  introPlayed: false,   // la intro solo una vez
-  menuMusic: null,      // 🎵 música global única (se inicia en TitleState)
+  clientPrefs: null, // <--- agregar esto
 
   start() {
+    // Inicializa clientPrefs una vez al inicio
+    this.clientPrefs = new ClientPrefs();
+    this.clientPrefs.loadPrefs();
+
     this.changeState(new TitleState(this)); // Comienza con TitleState
     this.lastTimestamp = performance.now();
     requestAnimationFrame(this.loop.bind(this));
@@ -33,7 +33,6 @@ export const Game = {
   },
 
   changeState(newState) {
-    // ✅ destruir estado anterior si existe
     if (this.currentState) {
       if (typeof this.currentState.destroy === "function") {
         this.currentState.destroy();

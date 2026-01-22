@@ -5,13 +5,12 @@ import CustomFadeTransition from "../../backend/CustomFadeTransition.js";
 export default class GameOverState {
   constructor(playState) {
     this.playState = playState;
-    this.camGame = playState.camGame; // 👈 cámara del juego
-    this.camHUD = playState.camHUD; // 👈 cámara del juego
+    this.camGame = playState.camGame; // cámara del juego
+    this.camHUD = playState.camHUD;
     this.ctx = this.camGame.ctx;
 
-    this.camHUD.visible = false; // ocultar HUD
-
-    this.camHUD.canvas.style.display = "none"; // ❌ oculta el HUD
+    this.camHUD.visible = false; 
+    this.camHUD.canvas.style.display = "none";
 
     this.bf = null;
     this.dad = this.playState.dad;
@@ -34,56 +33,60 @@ export default class GameOverState {
     if (this.playState.boyfriendVoice) this.playState.boyfriendVoice.pause();
     if (this.playState.dadVoice) this.playState.dadVoice.pause();
 
-    // Inputs
-    this.keyDownHandler = (e) => (this.keys[e.code] = true);
+    // Listeners de teclado
+    this.keyDownHandler = (e) => {
+      this.keys[e.code] = true;
+
+      if (e.code === "Enter" || e.code === "Space") {
+        this.startEndSequence();
+      }
+
+      // Salir con Escape o Backspace
+      if (e.code === "Escape" || e.code === "Backspace") {
+        this.exitGameOver();
+      }
+    };
+
     this.keyUpHandler = (e) => (this.keys[e.code] = false);
+
     window.addEventListener("keydown", this.keyDownHandler);
     window.addEventListener("keyup", this.keyUpHandler);
+
+    // Listener táctil para móvil
+    this.touchHandler = (e) => {
+      e.preventDefault(); // evita scroll/zoom
+      if (!this.isEnding) {
+        this.startEndSequence();
+      }
+    };
+    window.addEventListener("touchstart", this.touchHandler, { passive: false });
 
     if (this.playState.callOnScripts)
       this.playState.callOnScripts("onGameOverStart", []);
 
     // Cargamos BF-dead
     this.loadBFDead();
-    
-// Dentro del constructor
-this.keyDownHandler = (e) => {
-  this.keys[e.code] = true;
-
-  // Aquí detectamos la tecla Back / Escape
-  if (e.code === "Escape" || e.code === "Backspace") {
-    this.exitGameOver();
-  }
-};
-
-this.keyUpHandler = (e) => (this.keys[e.code] = false);
-
   }
 
-async loadBFDead() {
-  try {
-    this.bf = new Character("bf-dead", true);
+  async loadBFDead() {
+    try {
+      this.bf = new Character("bf-dead", true);
 
-    await this.bf.init({
-      position: [this.playState.boyfriend.x, this.playState.boyfriend.y]
-    });
+      await this.bf.init({
+        position: [this.playState.boyfriend.x, this.playState.boyfriend.y]
+      });
 
-    // 🔹 Hacer que la cámara siga al BF-dead
-    this.playState.camTarget = this.bf;
-
-    this.playDeathSound();
-    this.playFirstDeathAnim();
-  } catch (err) {
-    console.error("Error cargando bf-dead:", err);
-    this.bf = this.playState.boyfriend; // fallback
-
-    // 🔹 También aquí, si falla, cámara sigue al BF normal
-    this.playState.camTarget = this.bf;
-
-    this.playDeathSound();
-    this.playFirstDeathAnim();
+      this.playState.camTarget = this.bf;
+      this.playDeathSound();
+      this.playFirstDeathAnim();
+    } catch (err) {
+      console.error("Error cargando bf-dead:", err);
+      this.bf = this.playState.boyfriend;
+      this.playState.camTarget = this.bf;
+      this.playDeathSound();
+      this.playFirstDeathAnim();
+    }
   }
-}
 
   playDeathSound() {
     const audio = new Audio(this.deathSound);
@@ -124,39 +127,35 @@ async loadBFDead() {
     this.loopAudio.preload = "auto";
     this.loopAudio.play().catch(() => {});
   }
-exitGameOver() {
-  if (this.isEnding) return;
-  this.isEnding = true;
 
-  // Quitamos listeners
-  window.removeEventListener("keydown", this.keyDownHandler);
-  window.removeEventListener("keyup", this.keyUpHandler);
+  exitGameOver() {
+    if (this.isEnding) return;
+    this.isEnding = true;
 
-  // Detenemos cualquier música de game over
-  if (this.loopAudio) {
-    this.loopAudio.pause();
-    this.loopAudio.currentTime = 0;
-  }
+    // Quitamos listeners
+    window.removeEventListener("keydown", this.keyDownHandler);
+    window.removeEventListener("keyup", this.keyUpHandler);
+    window.removeEventListener("touchstart", this.touchHandler);
 
-  // Fade rápido y cambio de estado
-  this.fadingToBlack = true;
-  this.fadeToBlackAlpha = 0;
-  this.fadeCompleteCallback = () => {
-    // Suponiendo que quieras ir al MainMenuState
-    new CustomFadeTransition(this.game, 1.0, () => {
-      this.destroy();
-      import("../FreeplayState.js").then(({ default: FreeplayState }) => {
-        this.game.changeState(new FreeplayState(this.game));
-      });
-    });
-  };
-}
-
-  update(delta) {
-    if (!this.isEnding && (this.keys["Enter"] || this.keys["Space"])) {
-      this.startEndSequence();
+    // Detenemos música
+    if (this.loopAudio) {
+      this.loopAudio.pause();
+      this.loopAudio.currentTime = 0;
     }
 
+    this.fadingToBlack = true;
+    this.fadeToBlackAlpha = 0;
+    this.fadeCompleteCallback = () => {
+      new CustomFadeTransition(this.playState.game, 1.0, () => {
+        this.destroy();
+        import("../FreeplayState.js").then(({ default: FreeplayState }) => {
+          this.playState.game.changeState(new FreeplayState(this.playState.game));
+        });
+      });
+    };
+  }
+
+  update(delta) {
     if (this.fadingToBlack) {
       this.fadeToBlackAlpha += delta / 2;
       if (this.fadeToBlackAlpha >= 1) {
@@ -166,7 +165,6 @@ exitGameOver() {
       }
     }
 
-    // Actualizamos BF-dead para animaciones
     if (this.bf?.update) this.bf.update(delta);
 
     if (this.playState.callOnScripts) this.playState.callOnScripts("onUpdate", [delta]);
@@ -208,6 +206,7 @@ exitGameOver() {
 
     window.removeEventListener("keydown", this.keyDownHandler);
     window.removeEventListener("keyup", this.keyUpHandler);
+    window.removeEventListener("touchstart", this.touchHandler);
 
     if (this.loopAudio) {
       this.loopAudio.pause();
@@ -234,6 +233,7 @@ exitGameOver() {
   destroy() {
     window.removeEventListener("keydown", this.keyDownHandler);
     window.removeEventListener("keyup", this.keyUpHandler);
+    window.removeEventListener("touchstart", this.touchHandler);
     this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
   }
 }

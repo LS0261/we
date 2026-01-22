@@ -3,6 +3,7 @@ import Paths from "../backend/Paths.js";
 import MusicBeatState from "../backend/MusicBeatState.js";
 import MainMenuState from "../states/MainMenuState.js";
 import CustomFadeTransition from "../backend/CustomFadeTransition.js";
+import ControlsState from "./ControlsState.js"; // ajusta la ruta según tu estructura de carpetas
 
 export default class OptionsState extends MusicBeatState {
   constructor(game) {
@@ -97,17 +98,26 @@ selectOption() {
 
   const gameRef = this.game; // <-- captura la referencia
   new CustomFadeTransition(gameRef, 1.0, () => {
-    // Ahora gameRef es seguro de usar
-    console.log("Abrir subestado de:", option);
-    // gameRef.changeState(new NoteColorsState(gameRef)); // ejemplo de submenu
-  });
+    switch(option) {
+      case 'Controls':
+        gameRef.changeState(new ControlsState(gameRef)); // <-- nuevo subestado
+      break;            
+      }
+
+      console.log("Abrir subestado de:", option);
+
+    });
 }
 
 closeOptions() {
-  const gameRef = this.game; // <-- captura la referencia
-  new CustomFadeTransition(gameRef, 1.0, () => {
-    this.destroy();
-    gameRef.changeState(new MainMenuState(gameRef));
+  new CustomFadeTransition(this.game, 1.0, async () => {
+    const newState = new MainMenuState(this.game);
+
+    // Espera a que se cargue todo
+    await newState.load();
+
+    // Ahora sí cambiar de estado
+    this.game.changeState(newState);
   });
 }
 
